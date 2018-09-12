@@ -35,10 +35,9 @@ def dilate_2d(layer, pool_shape, output=None):
 def dilate_1d(layer, diameter, axis, output=None):
     if output is None:
         output = np.empty_like(layer)
-
     if diameter == 1:
         output[:] = layer
-    elif diameter < 10:
+    elif diameter < 26:
         brute_max_filter1d(layer, output, diameter, axis)
     else:
         max_filter1d(layer, output, diameter, axis)

@@ -6,15 +6,18 @@ import logging
 import numpy as np
 import networkx as nx
 from scipy.spatial import distance, cKDTree
+import pdb
+import matplotlib.pyplot as plt
+import sys
 
 from science_rcn.preproc import Preproc
 
 LOG = logging.getLogger(__name__)
 
-ModelFactors = namedtuple('ModelFactors', 'frcs edge_factors graph')
+ModelFactors = namedtuple('ModelFactors', 'frcs edge_factors graph ch')
 
 
-def train_image(img, perturb_factor=2.):
+def train_image(dat, perturb_factor=2.):
     """Main function for training on one image.
 
     Parameters
@@ -38,14 +41,29 @@ def train_image(img, perturb_factor=2.):
         the pool centers.
         The tightness of the constraint is in the 'perturb_radius' edge attribute.
     """
+    img = dat[0]
+    ch = dat[1]
+    # if (int(ch) < 60):
+    #     print str(chr(int(ch)+33)),
+    #     sys.stdout.flush()
+    #     return 
+    # print str(chr(int(ch)+33)),
+    # sys.stdout.flush()
+    # return 
     # Pre-processing layer (cf. Sec 4.2.1)
     preproc_layer = Preproc()
+    # pdb.set_trace()
     bu_msg = preproc_layer.fwd_infer(img)
     # Sparsification (cf. Sec 5.1.1)
     frcs = sparsify(bu_msg)
     # Lateral learning (cf. 5.2)
     graph, edge_factors = learn_laterals(frcs, bu_msg, perturb_factor=perturb_factor)
-    return ModelFactors(frcs, edge_factors, graph)
+    # nx.draw(graph,pos = nx.random_layout(graph),node_color = 'b',edge_color = 'r',with_labels = True, font_size =18,node_size=20)
+    # plt.show()
+    print str(chr(int(ch)+33)),
+    sys.stdout.flush()
+
+    return ModelFactors(frcs, edge_factors, graph, ch)
 
 
 def sparsify(bu_msg, suppress_radius=3):

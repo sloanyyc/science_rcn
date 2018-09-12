@@ -8,9 +8,11 @@ scipy.ndimage.morphology.grey_dilation.
 """
 from itertools import izip
 import logging
+import time
 import numpy as np
 import networkx as nx
 from numpy.random import rand, randint
+import pdb
 
 from science_rcn.dilation.dilation import dilate_2d
 from science_rcn.preproc import Preproc
@@ -23,7 +25,7 @@ class RCNInferenceError(Exception):
     pass
 
 
-def test_image(img, model_factors,
+def test_image(dat, model_factors,
                pool_shape=(25, 25), num_candidates=20, n_iters=300, damping=1.0):
     """
     Main function for testing on one image.
@@ -50,28 +52,45 @@ def test_image(img, model_factors,
     winner_score : float
         Score of the winning feature.
     """
+    img = dat[0]
+    tgt = dat[1]
     # Get bottom-up messages from the pre-processing layer
     preproc_layer = Preproc(cross_channel_pooling=True)
+    start_time = time.time()
+    # pdb.set_trace()
     bu_msg = preproc_layer.fwd_infer(img)
+    cur_time = time.time()
+    print('fwd_infer use %0.3f'%(cur_time-start_time))
+    start_time = cur_time
 
     # Forward pass inference
     fp_scores = np.zeros(len(model_factors[0]))
-    for i, (frcs, _, graph) in enumerate(izip(*model_factors)):
+    for i, (frcs, _, graph, ch) in enumerate(izip(*model_factors)):
         fp_scores[i] = forward_pass(frcs,
                                     bu_msg,
                                     graph,
                                     pool_shape)
     top_candidates = np.argsort(fp_scores)[-num_candidates:]
+    print(top_candidates)
+    print('count %d'%len(top_candidates))
+    cur_time = time.time()
+    print('forward_pass use %0.3f'%(cur_time-start_time))
+    start_time = cur_time
 
     # Backward pass inference
     winner_idx, winner_score = (-1, -np.inf)  # (training feature idx, score)
     for idx in top_candidates:
-        frcs, edge_factors = model_factors[0][idx], model_factors[1][idx]
+        frcs, edge_factors, ch = model_factors[0][idx], model_factors[1][idx], model_factors[3][idx]
         rcn_inf = LoopyBPInference(bu_msg, frcs, edge_factors, pool_shape, preproc_layer,
                                    n_iters=n_iters, damping=damping)
         score = rcn_inf.bwd_pass()
         if score >= winner_score:
             winner_idx, winner_score = (idx, score)
+            print('try {} ? {}  win: {} score: {}'.format(ch, tgt, winner_idx, winner_score))
+
+    cur_time = time.time()
+    print('bwd_pass use %0.3f'%(cur_time-start_time))
+    start_time = cur_time
     return winner_idx, winner_score
 
 
@@ -130,6 +149,7 @@ def forward_pass(frcs, bu_msg, graph, pool_shape):
             incoming_msgs[target] = msg_in
     fp_score = np.max(incoming_msgs[tree_schedule[-1, 1]] +
                       bu_msg[_pool_slice(*frcs[tree_schedule[-1, 1]])])
+
     return fp_score
 
 

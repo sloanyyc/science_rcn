@@ -159,17 +159,21 @@ def run_experiment(data_dir='data/MNIST1',
     start_time = time.time()
     train_partial = partial(train_image,
                             perturb_factor=perturb_factor)
-    # train_results = pool.map_async(train_partial, [d for d in train_data]).get(9999999)
-    train_results = []
-    for i in range(len(train_data)):
-        train_results.append(train_partial(train_data[i], perturb_factor=perturb_factor))
+    train_results = pool.map_async(train_partial, [d for d in train_data]).get(9999999)
+    # train_results = []
+    # for i in range(len(train_data)):
+    #     train_results.append(train_partial(train_data[i], perturb_factor=perturb_factor))
 
     print "Training use {} ms".format(time.time()-start_time)
     print(time.strftime('%H:%M:%S', time.localtime(time.time())))
+
+    for i in range(len(train_results)):
+        if not train_results[i]:
+            train_results[i] = train_results[0]
+    pickle.dump(train_results, open('train_results.pkl', 'wb'))
     all_model_factors = zip(*train_results)
 
     pickle.dump(all_model_factors, open('all_model_factors.pkl', 'wb'))
-    # pickle.dump(train_results, open('train_results.pkl', 'wb'))
 
     LOG.info("Testing on {} images...".format(len(test_data)))
     start_time = time.time()

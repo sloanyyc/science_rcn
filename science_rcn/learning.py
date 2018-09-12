@@ -57,7 +57,15 @@ def train_image(dat, perturb_factor=2.):
     # Sparsification (cf. Sec 5.1.1)
     frcs = sparsify(bu_msg)
     # Lateral learning (cf. 5.2)
-    graph, edge_factors = learn_laterals(frcs, bu_msg, perturb_factor=perturb_factor)
+    graph = None 
+    edge_factors = None 
+    try:
+        graph, edge_factors = learn_laterals(frcs, bu_msg, perturb_factor=perturb_factor)
+    except:
+        print('except learn_laterals')
+        pass
+    if not graph:
+        return None
     # nx.draw(graph,pos = nx.random_layout(graph),node_color = 'b',edge_color = 'r',with_labels = True, font_size =18,node_size=20)
     # plt.show()
     print str(chr(int(ch)+33)),

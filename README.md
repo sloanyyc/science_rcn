@@ -15,7 +15,7 @@ Before starting please make sure gcc is installed (`brew install gcc`) and up to
 Clone the repository:
 
 ```
-git clone https://github.com/vicariousinc/science_rcn.git
+git clone https://github.com/sloanyyc/science_rcn.git
 ```
 
 Simple Install:
@@ -57,24 +57,6 @@ python science_rcn/run.py --full_test_set --train_size 1000 --parallel --pool_sh
 ## Blog post
 
 Check out our related [blog post](https://www.vicarious.com/Common_Sense_Cortex_and_CAPTCHA.html).
-
-## Datasets
-
-We used the following datasets for the Science paper:
-
-CAPTCHA datasets
-
-- [reCAPTCHA](http://datasets.vicarious.com/recaptcha.zip) (from [google.com](http://google.com))
-- [BotDetect](http://datasets.vicarious.com/botdetect.zip) (from [captcha.com](http://captcha.com))
-- [Paypal](http://datasets.vicarious.com/paypal.zip) (from [paypal.com](http://paypal.com))
-- [Yahoo](http://datasets.vicarious.com/yahoo.zip) (from [yahoo.com](http://yahoo.com))
-
-MNIST datasets
-
-- Original (available at [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/))
-- [With occlusions](http://datasets.vicarious.com/mnist-multioccluded.zip) (by us)
-- [With noise](http://datasets.vicarious.com/noisyMNIST_tests.zip) (by us)
-
 
 ## MNIST licensing
 

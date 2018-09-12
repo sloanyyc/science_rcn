@@ -86,7 +86,7 @@ def test_image(dat, model_factors,
         score = rcn_inf.bwd_pass()
         if score >= winner_score:
             winner_idx, winner_score = (idx, score)
-        print('try {}{} char: {} win: {} score: {}'.format(str(chr(int(ch)+33)), str(chr(int(tgt)+33)), ch, idx, winner_score))
+            print('try {}{} char: {} win: {} score: {}'.format(str(chr(int(ch)+33)), str(chr(int(tgt)+33)), ch, idx, winner_score))
 
     cur_time = time.time()
     print('bwd_pass use %0.3f'%(cur_time-start_time))

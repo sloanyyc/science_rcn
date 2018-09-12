@@ -62,7 +62,7 @@ setup(
     setup_requires=['numpy>=1.13.3'],
     install_requires=[
         'networkx>=1.11,<1.12',
-        'numpy==1.13.3',
+        'numpy==1.15.1',
         'pillow>=4.1.0,<4.2',
         'scipy>=0.19.0,<0.20',
         'setuptools>=36.5.0'

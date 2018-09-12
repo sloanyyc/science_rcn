@@ -2,6 +2,59 @@
 
 # Reference implementation of Recursive Cortical Network (RCN)
 
+## Update
+### 测试模式
+需先训练后
+```
+python science_rcn/run.py --train_size 100 --test_size 20 --parallel --test_only
+# 可以指定模型名称
+python science_rcn/run.py --train_size 100 --test_size 20 --parallel --test_only --model_file='model.pkl'
+```
+### 指定数据集目录
+参数 --data_dir=data/MNIST1
+
+### 输出训练进度
+输出当前训练的字符
+
+### 输出测试进度，测试信息
+
+```
+python science_rcn/run.py --test_only
+INFO:__main__:Testing on 20 images...
+20:28:54
+fwd_infer use 0.134
+
+
+
+[ 0 17  1  3 11 12 23 18 21  4 15  2 16 24 14  6 19 10  5  7]
+count 20
+forward_pass use 0.854
+try !! char: 0 win: 0 score: 24.4962846709
+try !! char: 0 win: 3 score: 25.5222142712
+try !! char: 0 win: 12 score: 26.7935296271
+try !! char: 0 win: 23 score: 27.0901419072
+try !! char: 0 win: 21 score: 27.0918954155
+try !! char: 0 win: 4 score: 28.0573342511
+try !! char: 0 win: 15 score: 28.205319167
+try !! char: 0 win: 24 score: 29.0594048523
+try !! char: 0 win: 19 score: 29.7853003534
+try !! char: 0 win: 5 score: 30.2620724526
+try !! char: 0 win: 7 score: 31.479678884
+bwd_pass use 5.833
+fwd_infer use 0.112
+[27 26 17  8 12 11  3 21 18 15 23 28 14 24 10  6 19 16  7  5]
+count 20
+forward_pass use 0.871
+try !! char: 0 win: 27 score: 33.8280306876
+try !! char: 0 win: 26 score: 34.2232459437
+...
+```
+
+## 一些问题
+### 训练样本较多时，有时发生 IndexError 错误
+捕捉错误，返回空，在外层将出错样本结果映射到第0个字符
+
+
 Reference implementation of a two-level RCN model on MNIST classification. See the *Science* article "A generative vision model that trains with high data efficiency and breaks text-based CAPTCHAs" and [Vicarious Blog](https://www.vicarious.com/Common_Sense_Cortex_and_CAPTCHA.html) for details.
 
 > Note: this is an unoptimized reference implementation and is not intended for production.
@@ -15,7 +68,7 @@ Before starting please make sure gcc is installed (`brew install gcc`) and up to
 Clone the repository:
 
 ```
-git clone https://github.com/vicariousinc/science_rcn.git
+git clone https://github.com/sloanyyc/science_rcn.git
 ```
 
 Simple Install:
@@ -57,24 +110,6 @@ python science_rcn/run.py --full_test_set --train_size 1000 --parallel --pool_sh
 ## Blog post
 
 Check out our related [blog post](https://www.vicarious.com/Common_Sense_Cortex_and_CAPTCHA.html).
-
-## Datasets
-
-We used the following datasets for the Science paper:
-
-CAPTCHA datasets
-
-- [reCAPTCHA](http://datasets.vicarious.com/recaptcha.zip) (from [google.com](http://google.com))
-- [BotDetect](http://datasets.vicarious.com/botdetect.zip) (from [captcha.com](http://captcha.com))
-- [Paypal](http://datasets.vicarious.com/paypal.zip) (from [paypal.com](http://paypal.com))
-- [Yahoo](http://datasets.vicarious.com/yahoo.zip) (from [yahoo.com](http://yahoo.com))
-
-MNIST datasets
-
-- Original (available at [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/))
-- [With occlusions](http://datasets.vicarious.com/mnist-multioccluded.zip) (by us)
-- [With noise](http://datasets.vicarious.com/noisyMNIST_tests.zip) (by us)
-
 
 ## MNIST licensing
 

@@ -37,6 +37,7 @@ def run_test_only(data_dir='data/MNIST1',
                    model_file='default_model.pkl',
                    train_size=20,
                    test_size=20,
+                   fit_level=1,
                    full_test_set=False,
                    pool_shape=(25, 25),
                    perturb_factor=2.,
@@ -90,7 +91,10 @@ def run_test_only(data_dir='data/MNIST1',
     print(time.strftime('%H:%M:%S', time.localtime(time.time())))
     start_time = time.time()
     test_partial = partial(test_image, model_factors=all_model_factors,
-                           pool_shape=pool_shape)
+                           pool_shape=pool_shape,
+                           num_candidates=5,
+                           n_iters=20,
+                           test_size=test_size)
     test_results = pool.map_async(test_partial, [d for d in test_data]).get(9999999)
 
     # Evaluate result
@@ -106,8 +110,10 @@ def run_test_only(data_dir='data/MNIST1',
 
 
 def run_experiment(data_dir='data/MNIST1',
+                   model_file='default_model.pkl',
                    train_size=20,
                    test_size=20,
+                   fit_level=1,
                    full_test_set=False,
                    pool_shape=(25, 25),
                    perturb_factor=2.,
@@ -170,15 +176,18 @@ def run_experiment(data_dir='data/MNIST1',
     for i in range(len(train_results)):
         if not train_results[i]:
             train_results[i] = train_results[0]
-    pickle.dump(train_results, open('train_results.pkl', 'wb'))
+    # pickle.dump(train_results, open('train_results.pkl', 'wb'))
     all_model_factors = zip(*train_results)
 
-    pickle.dump(all_model_factors, open('all_model_factors.pkl', 'wb'))
+    pickle.dump(all_model_factors, open(model_file, 'wb'))
 
     LOG.info("Testing on {} images...".format(len(test_data)))
     start_time = time.time()
     test_partial = partial(test_image, model_factors=all_model_factors,
-                           pool_shape=pool_shape)
+                           pool_shape=pool_shape,
+                           num_candidates=5,
+                           n_iters=20,
+                           test_size=test_size)
     test_results = pool.map_async(test_partial, [d for d in test_data]).get(9999999)
 
     # Evaluate result
@@ -304,6 +313,13 @@ if __name__ == '__main__':
         help="Perturbation factor.",
     )
     parser.add_argument(
+        '--fit_level',
+        dest='fit_level',
+        type=int,
+        default=1,
+        help="fit level big fit better.",
+    )
+    parser.add_argument(
         '--data_dir',
         dest='data_dir',
         default='data/MNIST',
@@ -360,6 +376,7 @@ if __name__ == '__main__':
                        class_count=options.class_count)
     else:
         run_experiment(train_size=options.train_size,
+                       model_file=options.model_file,
                        data_dir=options.data_dir,
                        test_size=options.test_size,
                        full_test_set=options.full_test_set,

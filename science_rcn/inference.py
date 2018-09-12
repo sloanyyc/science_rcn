@@ -19,6 +19,7 @@ from science_rcn.preproc import Preproc
 
 LOG = logging.getLogger(__name__)
 
+test_count=0
 
 class RCNInferenceError(Exception):
     """Raise for general errors in RCN inference."""
@@ -26,7 +27,11 @@ class RCNInferenceError(Exception):
 
 
 def test_image(dat, model_factors,
-               pool_shape=(25, 25), num_candidates=20, n_iters=300, damping=1.0):
+               pool_shape=(25, 25), 
+               num_candidates=20, 
+               n_iters=300, 
+               test_size=20,
+               damping=1.0):
     """
     Main function for testing on one image.
 
@@ -52,6 +57,7 @@ def test_image(dat, model_factors,
     winner_score : float
         Score of the winning feature.
     """
+    global test_count
     img = dat[0]
     tgt = dat[1]
     # Get bottom-up messages from the pre-processing layer
@@ -60,7 +66,8 @@ def test_image(dat, model_factors,
     # pdb.set_trace()
     bu_msg = preproc_layer.fwd_infer(img)
     cur_time = time.time()
-    print('fwd_infer use %0.3f'%(cur_time-start_time))
+    test_count += 1
+    print('%d. fwd_infer use %0.3f'%(test_count, cur_time-start_time))
     start_time = cur_time
 
     # Forward pass inference
@@ -72,7 +79,7 @@ def test_image(dat, model_factors,
                                     pool_shape)
     top_candidates = np.argsort(fp_scores)[-num_candidates:]
     print(top_candidates)
-    print('count %d'%len(top_candidates))
+    # print('count %d'%len(top_candidates))
     cur_time = time.time()
     print('forward_pass use %0.3f'%(cur_time-start_time))
     start_time = cur_time

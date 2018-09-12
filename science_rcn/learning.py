@@ -44,10 +44,10 @@ def train_image(dat, perturb_factor=2.):
     img = dat[0]
     ch = dat[1]
     # if (int(ch) < 60):
-    #     print str(chr(int(ch)+33)),
+    #     print str(chr(int(ch)+48)),
     #     sys.stdout.flush()
     #     return 
-    # print str(chr(int(ch)+33)),
+    # print str(chr(int(ch)+48)),
     # sys.stdout.flush()
     # return 
     # Pre-processing layer (cf. Sec 4.2.1)
@@ -68,7 +68,7 @@ def train_image(dat, perturb_factor=2.):
         return None
     # nx.draw(graph,pos = nx.random_layout(graph),node_color = 'b',edge_color = 'r',with_labels = True, font_size =18,node_size=20)
     # plt.show()
-    print str(chr(int(ch)+33)),
+    print str(chr(int(ch)+48)),
     sys.stdout.flush()
 
     return ModelFactors(frcs, edge_factors, graph, ch)

@@ -1,0 +1,2586 @@
+
+(venv) bogon:science_rcn sloanyi$ python science_rcn/run.py --train_size=50 --data_dir=data/MNIST3 --test_only --model_file=all_model_factors.pkl
+
+INFO:__main__:Testing on 188 images...
+13:14:18
+
+fwd_infer use 0.116
+[ 83 303 349 296  80 346 203 457 216 461  43 204 459  44 379  38 295 458
+   0  41]
+count 20
+forward_pass use 0.987
+try 1! char: 00016 win: 83 score: 4.0287403674
+try ]! char: 00060 win: 303 score: 5.57191514514
+try f! char: 00069 win: 349 score: 5.89281772634
+try 1! char: 00016 win: 80 score: 5.94531186551
+try f! char: 00069 win: 346 score: 6.77871281336
+try I! char: 00040 win: 203 score: 8.18999423481
+try I! char: 00040 win: 204 score: 8.35228413127
+try |! char: 00091 win: 459 score: 9.62415671446
+try l! char: 00075 win: 379 score: 9.65185852205
+try !! char: 00000 win: 0 score: 11.0395268766
+bwd_pass use 3.314
+fwd_infer use 0.102
+[427  32  36 345   3 325 202  39 297 200 377 416  37 415 455 366 378 294
+   4 208]
+count 20
+forward_pass use 0.977
+try v! char: 00085 win: 427 score: 3.58114852926
+try '! char: 00006 win: 32 score: 4.25189462737
+try !! char: 00000 win: 3 score: 4.4329556569
+try I! char: 00040 win: 202 score: 4.50435399673
+try I! char: 00040 win: 200 score: 5.24361510004
+try t! char: 00083 win: 415 score: 8.67005432643
+try l! char: 00075 win: 378 score: 9.89152860392
+try !! char: 00000 win: 4 score: 11.6626734961
+bwd_pass use 2.489
+fwd_infer use 0.107
+[ 45   5 318 202   3  48 317 309 293 301   1   9 315  47   8 319  34  30
+  31  33]
+count 20
+forward_pass use 0.953
+try *" char: 00009 win: 45 score: -0.0178266531179
+try ]" char: 00060 win: 301 score: 2.49045487205
+try `" char: 00063 win: 315 score: 3.49989455088
+try '" char: 00006 win: 34 score: 4.31243479731
+try '" char: 00006 win: 33 score: 4.41666644504
+bwd_pass use 1.619
+fwd_infer use 0.100
+[360 315 377 113 415 296  32  30  31  35  34 379  33 295 307   3   9   1
+ 202 376]
+count 20
+forward_pass use 0.968
+try i" char: 00072 win: 360 score: 1.49503528376
+try `" char: 00063 win: 315 score: 2.98293160834
+try '" char: 00006 win: 32 score: 3.92905038363
+try '" char: 00006 win: 30 score: 6.03739516282
+try '" char: 00006 win: 34 score: 7.07086215118
+bwd_pass use 2.851
+fwd_infer use 0.100
+[276 441 451 281  11 337 391 210 277 398 264  99 246 401 115 400  79 168
+  12  10]
+count 20
+forward_pass use 1.049
+try X# char: 00055 win: 276 score: 5.36844548528
+try y# char: 00088 win: 441 score: 9.3425285174
+try {# char: 00090 win: 451 score: 9.96175613756
+try ## char: 00002 win: 11 score: 11.2636317491
+try p# char: 00079 win: 398 score: 11.8172237083
+try 4# char: 00019 win: 99 score: 12.2614687444
+try ## char: 00002 win: 12 score: 20.217112552
+bwd_pass use 5.047
+fwd_infer use 0.106
+[199 387 115 198 350 280 195 277 168 210 401 248 245 276  79  14  11 246
+  12  10]
+count 20
+forward_pass use 1.029
+try H# char: 00039 win: 199 score: 5.92768516452
+try n# char: 00077 win: 387 score: 8.73625994648
+try H# char: 00039 win: 198 score: 9.19311378501
+try H# char: 00039 win: 195 score: 9.79052222026
+try X# char: 00055 win: 277 score: 11.6167445925
+try R# char: 00049 win: 248 score: 12.7419854056
+try 0# char: 00015 win: 79 score: 14.3542957279
+try ## char: 00002 win: 14 score: 20.2057891204
+try ## char: 00002 win: 10 score: 21.5192008076
+bwd_pass use 7.880
+fwd_infer use 0.108
+[284  78 166  83  84 289  81 120 275 355 188 105 121 279 182 104 100 103
+  17 251]
+count 20
+forward_pass use 1.012
+try Y$ char: 00056 win: 284 score: 6.79803924577
+try 1$ char: 00016 win: 83 score: 8.39734313705
+try F$ char: 00037 win: 188 score: 12.6656065881
+try 5$ char: 00020 win: 104 score: 14.3570201337
+try $$ char: 00003 win: 17 score: 15.1380357051
+try S$ char: 00050 win: 251 score: 18.3155880525
+bwd_pass use 7.797
+fwd_infer use 0.113
+[ 95 262 193 149 231 118 355 279 137 105 166 120 170 121 182  17 104 103
+ 100 251]
+count 20
+forward_pass use 1.013
+try 4$ char: 00019 win: 95 score: 6.13578026328
+try >$ char: 00029 win: 149 score: 9.35094470211
+try 6$ char: 00021 win: 105 score: 10.7858608866
+try $$ char: 00003 win: 17 score: 12.697373681
+try 5$ char: 00020 win: 104 score: 15.2062261719
+try 5$ char: 00020 win: 103 score: 16.4272802326
+try 5$ char: 00020 win: 100 score: 16.6325611567
+try S$ char: 00050 win: 251 score: 18.8857314554
+bwd_pass use 5.534
+fwd_infer use 0.105
+[201 191 377 345 253  15 376 300 286 392 328 257 416 111 108 107 112 116
+ 119 371]
+count 20
+forward_pass use 1.023
+try I% char: 00040 win: 201 score: 8.7892828208
+try l% char: 00075 win: 376 score: 9.46723776923
+bwd_pass use 8.872
+fwd_infer use 0.104
+[176 168 198 214 123 380  99 264 270  74 229 272 120 442 122 273 383  20
+  21  22]
+count 20
+forward_pass use 1.014
+try D% char: 00035 win: 176 score: 7.5393776115
+try B% char: 00033 win: 168 score: 10.0597861078
+try 4% char: 00019 win: 99 score: 11.9876526178
+try N% char: 00045 win: 229 score: 12.0391776303
+try 9% char: 00024 win: 120 score: 12.2464739807
+try y% char: 00088 win: 442 score: 14.7156983212
+try %% char: 00004 win: 20 score: 17.5680461296
+try %% char: 00004 win: 21 score: 27.9750424467
+try %% char: 00004 win: 22 score: 28.9528247787
+bwd_pass use 9.232
+fwd_infer use 0.114
+[102 213 122  93 160  90 246 243 371 286 117 234 165 249 180 184 239 352
+  26  28]
+count 20
+forward_pass use 1.005
+try 5& char: 00020 win: 102 score: -inf
+try K& char: 00042 win: 213 score: 11.9955952729
+try 3& char: 00018 win: 93 score: 13.6698602801
+try E& char: 00036 win: 180 score: 13.7399952112
+try && char: 00005 win: 26 score: 24.3756258898
+try && char: 00005 win: 28 score: 27.3700446771
+bwd_pass use 6.952
+fwd_infer use 0.102
+[371  76  90  87  25 249 422 117 286 213 234 165 184 180 212 239 278 352
+  26  28]
+count 20
+forward_pass use 1.007
+try k& char: 00074 win: 371 score: 7.48624973849
+try 0& char: 00015 win: 76 score: 11.4805201007
+try 2& char: 00017 win: 87 score: 12.0346315501
+try && char: 00005 win: 25 score: 17.4634467367
+try && char: 00005 win: 26 score: 22.4090689494
+try && char: 00005 win: 28 score: 26.9744212075
+bwd_pass use 5.212
+fwd_infer use 0.103
+[ 68 318  47  30 316  61  58   1  34 202 309  66  67  69  55 293 319 301
+ 317  31]
+count 20
+forward_pass use 0.919
+try .' char: 00013 win: 68 score: -4.17539318666
+try ,' char: 00011 win: 58 score: -3.97707431265
+try I' char: 00040 win: 202 score: -3.2119693447
+try .' char: 00013 win: 66 score: -3.00671262642
+try .' char: 00013 win: 69 score: -2.80307461555
+try `' char: 00063 win: 319 score: -2.39414585893
+try `' char: 00063 win: 317 score: -0.334837629075
+try '' char: 00006 win: 31 score: 1.58470304932
+bwd_pass use 1.122
+fwd_infer use 0.106
+[ 31  35 317 345   8 293   3 318  48  47 301  32 315 376   1 202 319   9
+  34  33]
+count 20
+forward_pass use 0.950
+try '' char: 00006 win: 31 score: -2.03008880726
+try `' char: 00063 win: 317 score: -1.64974317308
+try "' char: 00001 win: 8 score: 0.101091545246
+try `' char: 00063 win: 318 score: 0.890035955019
+try ]' char: 00060 win: 301 score: 1.23393624692
+try `' char: 00063 win: 319 score: 3.21887437002
+try '' char: 00006 win: 34 score: 5.38653723574
+bwd_pass use 1.441
+fwd_infer use 0.109
+[415  73 367 215  35 452 201  82 369  36 416 454 200 292  37 378  71 377
+  39 294]
+count 20
+forward_pass use 0.986
+try t( char: 00083 win: 415 score: 8.10223401348
+try j( char: 00073 win: 367 score: 8.81854090851
+try j( char: 00073 win: 369 score: 10.7123656543
+try (( char: 00007 win: 39 score: 12.4916926348
+bwd_pass use 3.306
+fwd_infer use 0.103
+[ 72 331 440 364 409 456  74 407 203 302 459 405  38 458 204  42 387 219
+ 303 451]
+count 20
+forward_pass use 0.978
+try /( char: 00014 win: 72 score: 1.79436947893
+try c( char: 00066 win: 331 score: 3.51963568869
+try i( char: 00072 win: 364 score: 4.12104132539
+try r( char: 00081 win: 409 score: 5.24586961351
+try (( char: 00007 win: 38 score: 5.30322015463
+try L( char: 00043 win: 219 score: 7.61718256908
+try {( char: 00090 win: 451 score: 10.7898938612
+bwd_pass use 4.816
+fwd_infer use 0.102
+[458 379 203 291 376 295 201 463  82 377  71  43 454 292 457 460 464 300
+ 456  44]
+count 20
+forward_pass use 0.988
+try |) char: 00091 win: 458 score: 6.69256599269
+try l) char: 00075 win: 379 score: 10.0890929014
+try I) char: 00040 win: 201 score: 11.1299413939
+try l) char: 00075 win: 377 score: 11.3660061181
+try }) char: 00092 win: 460 score: 13.4705720949
+try }) char: 00092 win: 464 score: 15.0551890238
+try )) char: 00008 win: 44 score: 15.4523604862
+bwd_pass use 2.867
+fwd_infer use 0.109
+[201 418 295 365 302 369 298 364 462  71 299 203 456 463  82 292 304 367
+ 375 460]
+count 20
+forward_pass use 1.003
+try I) char: 00040 win: 201 score: 3.99383163642
+try t) char: 00083 win: 418 score: 5.61693221351
+try j) char: 00073 win: 369 score: 6.55026323505
+try i) char: 00072 win: 364 score: 6.66397632768
+try 1) char: 00016 win: 82 score: 7.01476636856
+try j) char: 00073 win: 367 score: 8.1731603209
+try l) char: 00075 win: 375 score: 8.90701609166
+bwd_pass use 3.010
+fwd_infer use 0.124
+[318 309 347 376  66  67  55  69 202   8  33 293 301  30 319  34 315  31
+ 317  47]
+count 20
+forward_pass use 1.083
+try `* char: 00063 win: 318 score: -3.30155725393
+try .* char: 00013 win: 66 score: -2.79474472673
+try .* char: 00013 win: 67 score: -2.71548623825
+try '* char: 00006 win: 33 score: -1.36940995711
+try [* char: 00058 win: 293 score: -0.414964177207
+try ]* char: 00060 win: 301 score: 1.01898060975
+try `* char: 00063 win: 315 score: 1.72634450339
+try `* char: 00063 win: 317 score: 3.42497456928
+try ** char: 00009 win: 47 score: 9.35050913957
+bwd_pass use 1.571
+fwd_infer use 0.121
+[318 309 347 376  66  67  55  69 202   8  33 293 301  30 319  34 315  31
+ 317  47]
+count 20
+forward_pass use 0.994
+try `* char: 00063 win: 318 score: -3.38719573315
+try .* char: 00013 win: 66 score: -2.95161023627
+try .* char: 00013 win: 67 score: -2.58222300969
+try '* char: 00006 win: 33 score: -1.41855543962
+try [* char: 00058 win: 293 score: -0.663139154343
+try ]* char: 00060 win: 301 score: 1.08570295683
+try `* char: 00063 win: 315 score: 1.8847834244
+try `* char: 00063 win: 317 score: 3.27033732453
+try ** char: 00009 win: 47 score: 9.18971682758
+bwd_pass use 1.463
+fwd_infer use 0.097
+[364 203 450 387  54  50 410 440 461 162  42 219 332 205 458 216 204 303
+  52 451]
+count 20
+forward_pass use 1.013
+try i+ char: 00072 win: 364 score: 4.10980551509
+try ++ char: 00010 win: 54 score: 7.32806891042
+try ++ char: 00010 win: 52 score: 11.5137955595
+bwd_pass use 2.749
+fwd_infer use 0.110
+[ 60 375 415 365 446 359 201  54 320 416 363 136 362 377 325  82 418 437
+  49 438]
+count 20
+forward_pass use 0.995
+try -+ char: 00012 win: 60 score: 3.35814435036
+try ++ char: 00010 win: 54 score: 6.63189527749
+try *+ char: 00009 win: 49 score: 6.86648414186
+bwd_pass use 4.106
+fwd_infer use 0.105
+[ 61  58 309 128 133 314  69  55 331 293 126 301 311 127 310 313  67  66
+  68  65]
+count 20
+forward_pass use 0.966
+try -, char: 00012 win: 61 score: -4.65763911787
+try ,, char: 00011 win: 58 score: -3.87999317711
+try :, char: 00025 win: 128 score: -3.04445575748
+try ;, char: 00026 win: 133 score: -2.83792183585
+try c, char: 00066 win: 331 score: -1.90682682292
+try :, char: 00025 win: 126 score: -1.79929591159
+try :, char: 00025 win: 127 score: 0.371868271035
+try ., char: 00013 win: 67 score: 1.7946728183
+try ., char: 00013 win: 66 score: 3.55865733131
+try ., char: 00013 win: 68 score: 3.83107448348
+try ., char: 00013 win: 65 score: 4.06217671565
+bwd_pass use 2.030
+fwd_infer use 0.107
+[301 129 378 293 368 133  40  55  69  67 369 361 131 132 130  58 134  59
+  56  57]
+count 20
+forward_pass use 0.980
+try ], char: 00060 win: 301 score: -2.27730550937
+try :, char: 00025 win: 129 score: -0.586452953449
+try [, char: 00058 win: 293 score: 0.331256431489
+try ;, char: 00026 win: 133 score: 0.387410210044
+try ,, char: 00011 win: 55 score: 3.34157153016
+try ,, char: 00011 win: 58 score: 4.0879664472
+try ,, char: 00011 win: 59 score: 4.950342422
+try ,, char: 00011 win: 57 score: 5.15653015057
+bwd_pass use 1.931
+fwd_infer use 0.104
+[125  66  67  69 140  55  32 293 136  48 301 466 467 318  64 413  61  63
+  62  60]
+count 20
+forward_pass use 0.974
+try :- char: 00025 win: 125 score: -3.53503254108
+try .- char: 00013 win: 66 score: -3.28560650643
+try .- char: 00013 win: 67 score: -2.87198379975
+try '- char: 00006 win: 32 score: -0.322359151807
+try ~- char: 00093 win: 467 score: 0.182659966809
+try `- char: 00063 win: 318 score: 2.45406519257
+try -- char: 00012 win: 61 score: 4.73683961817
+try -- char: 00012 win: 62 score: 5.14908933979
+try -- char: 00012 win: 60 score: 5.5915552954
+bwd_pass use 1.987
+fwd_infer use 0.113
+[125  66  67  69 140  55  32 293 136  48 301 466 467 318  64 413  61  63
+  62  60]
+count 20
+forward_pass use 0.954
+try :- char: 00025 win: 125 score: -3.75794941891
+try .- char: 00013 win: 66 score: -3.16364722088
+try ,- char: 00011 win: 55 score: -2.98164167532
+try '- char: 00006 win: 32 score: -0.500365658694
+try `- char: 00063 win: 318 score: 2.2443209634
+try -- char: 00012 win: 61 score: 4.537935624
+try -- char: 00012 win: 62 score: 4.94768660434
+try -- char: 00012 win: 60 score: 5.35474018592
+bwd_pass use 1.952
+fwd_infer use 0.097
+[134 132  66 446 126 131 293 341 129 301 133  62  64  55  67  57  69  59
+  58  56]
+count 20
+forward_pass use 1.018
+try ;. char: 00026 win: 134 score: -4.31482661828
+try ;. char: 00026 win: 132 score: -2.36182982996
+try :. char: 00025 win: 126 score: -0.831830543588
+try :. char: 00025 win: 129 score: 0.187019822896
+try -. char: 00012 win: 62 score: 1.07336478175
+try -. char: 00012 win: 64 score: 1.80131195816
+try ,. char: 00011 win: 55 score: 3.55235789811
+bwd_pass use 1.482
+fwd_infer use 0.101
+[ 62 318  61 316 309 310  58  59 311  67  55  66 293 331 128 301  69 127
+  65  68]
+count 20
+forward_pass use 0.947
+try -. char: 00012 win: 62 score: -4.38426517914
+try `. char: 00063 win: 316 score: -4.26312816795
+try ^. char: 00061 win: 309 score: -4.17469591643
+try ,. char: 00011 win: 58 score: -3.12946519484
+try _. char: 00062 win: 311 score: -2.48107814105
+try c. char: 00066 win: 331 score: -0.253626122628
+try :. char: 00025 win: 128 score: -0.227268850832
+try :. char: 00025 win: 127 score: 0.239104832236
+try .. char: 00013 win: 68 score: 3.34643169247
+bwd_pass use 1.387
+fwd_infer use 0.103
+[347 112 111 365 415 363 362  39 292 416  70 454  73 376 201 452 464  37
+  71 377]
+count 20
+forward_pass use 0.983
+try f/ char: 00069 win: 347 score: 3.41370959271
+try 7/ char: 00022 win: 112 score: 4.94204198287
+try 7/ char: 00022 win: 111 score: 5.52095257106
+try t/ char: 00083 win: 415 score: 6.14441530895
+try i/ char: 00072 win: 363 score: 7.69396840073
+try i/ char: 00072 win: 362 score: 7.79550108713
+try // char: 00014 win: 70 score: 8.41377993654
+try // char: 00014 win: 73 score: 9.02430607589
+bwd_pass use 2.517
+fwd_infer use 0.102
+[452 458 454  82 460 375 365 464 295 377 201 459 349 379 203  44  71 457
+  43 456]
+count 20
+forward_pass use 0.983
+try {/ char: 00090 win: 452 score: 8.92316079453
+try 1/ char: 00016 win: 82 score: 9.41627855425
+try j/ char: 00073 win: 365 score: 11.7598081191
+try // char: 00014 win: 71 score: 11.9460179293
+try )/ char: 00008 win: 43 score: 12.2644079705
+try |/ char: 00091 win: 456 score: 14.4612853786
+bwd_pass use 3.404
+fwd_infer use 0.103
+[122 244 178 106 237 123 335 108 241 221 171 388 266 269 243  79  77  75
+  76 234]
+count 20
+forward_pass use 0.982
+try 90 char: 00024 win: 122 score: 15.5719875704
+try 60 char: 00021 win: 106 score: 16.303983257
+try 60 char: 00021 win: 108 score: 17.0057121055
+try C0 char: 00034 win: 171 score: 17.3341551361
+try n0 char: 00077 win: 388 score: 17.8778168618
+try 00 char: 00015 win: 79 score: 21.9256930155
+try 00 char: 00015 win: 77 score: 24.4363401918
+try O0 char: 00046 win: 234 score: 24.685676109
+bwd_pass use 5.342
+fwd_infer use 0.100
+[336 396 105 166 231 199 120 121 355 170 394 395 260 261 177 175 263  78
+ 262 230]
+count 20
+forward_pass use 0.977
+try d0 char: 00067 win: 336 score: 17.8125274601
+try 60 char: 00021 win: 105 score: 18.5400296588
+try o0 char: 00078 win: 394 score: 23.7201660181
+bwd_pass use 6.479
+fwd_infer use 0.100
+[204 279  86  89 209 284  91  88 114   0 205 303  42 442  72  41 289  83
+  81  84]
+count 20
+forward_pass use 0.951
+try I1 char: 00040 win: 204 score: 3.19747036435
+try X1 char: 00055 win: 279 score: 3.8788501758
+try 21 char: 00017 win: 86 score: 6.68281918752
+try 31 char: 00018 win: 91 score: 7.41260082905
+try J1 char: 00041 win: 205 score: 8.43985322388
+try Z1 char: 00057 win: 289 score: 8.45719384669
+try 11 char: 00016 win: 83 score: 14.2647610583
+try 11 char: 00016 win: 81 score: 15.0979450237
+try 11 char: 00016 win: 84 score: 15.4239333862
+bwd_pass use 2.915
+fwd_infer use 0.099
+[112 416 338 299 415 360  37 218 292 208 111  82 377 202 376 201 300 113
+ 215 464]
+count 20
+forward_pass use 0.962
+try 71 char: 00022 win: 112 score: 3.37313227995
+try t1 char: 00083 win: 416 score: 5.18701137105
+try d1 char: 00067 win: 338 score: 7.50551367085
+try t1 char: 00083 win: 415 score: 7.93821543034
+try l1 char: 00075 win: 377 score: 8.34987008831
+try l1 char: 00075 win: 376 score: 9.24774918888
+try I1 char: 00040 win: 201 score: 9.93398165805
+try }1 char: 00092 win: 464 score: 11.9631241669
+bwd_pass use 2.517
+fwd_infer use 0.099
+[ 82  75 207 112 184 239 377 113 365  44  90  93 154 151 206  71 285 215
+ 286  87]
+count 20
+forward_pass use 0.984
+try 12 char: 00016 win: 82 score: -inf
+try 02 char: 00015 win: 75 score: -inf
+try J2 char: 00041 win: 207 score: 6.68031737887
+try P2 char: 00047 win: 239 score: 7.83095522324
+try l2 char: 00075 win: 377 score: 8.3834121411
+try j2 char: 00073 win: 365 score: 9.75899619973
+try 32 char: 00018 win: 90 score: 10.9670265847
+try 32 char: 00018 win: 93 score: 11.3847623231
+try Z2 char: 00057 win: 285 score: 14.4596110396
+try 22 char: 00017 win: 87 score: 19.7895084953
+bwd_pass use 6.427
+fwd_infer use 0.101
+[110 235 153  79 386 385 288 448  86 120 176 152 175 177  77 205  89 287
+ 240  85]
+count 20
+forward_pass use 0.973
+try 72 char: 00022 win: 110 score: 8.97087988785
+try ?2 char: 00030 win: 153 score: 13.4895322305
+try Z2 char: 00057 win: 287 score: 16.0198867111
+try 22 char: 00017 win: 85 score: 20.5880134122
+bwd_pass use 5.492
+fwd_infer use 0.100
+[414  44 464 206 102 106 286 113 191 108  18 253 119 116 300 392  98 123
+ 335  93]
+count 20
+forward_pass use 0.973
+try s3 char: 00082 win: 414 score: 9.13726009224
+try 63 char: 00021 win: 106 score: 9.86566350862
+try S3 char: 00050 win: 253 score: 12.8005887901
+try 83 char: 00023 win: 119 score: 13.2904129745
+try 83 char: 00023 win: 116 score: 13.7975748296
+try 33 char: 00018 win: 93 score: 19.8627258489
+bwd_pass use 4.650
+fwd_infer use 0.100
+[414 335  16 411 234  85  96 108  18  41 122  87 116 119 191 286 123 254
+  92  93]
+count 20
+forward_pass use 0.975
+try s3 char: 00082 win: 414 score: -inf
+try d3 char: 00067 win: 335 score: 6.05346723911
+try s3 char: 00082 win: 411 score: 11.1807400867
+try 23 char: 00017 win: 87 score: 12.0575654918
+try 83 char: 00023 win: 116 score: 12.8692198551
+try 83 char: 00023 win: 119 score: 13.0670614072
+try S3 char: 00050 win: 254 score: 15.2259705874
+try 33 char: 00018 win: 92 score: 17.033799142
+try 33 char: 00018 win: 93 score: 20.8006791993
+bwd_pass use 5.589
+fwd_infer use 0.099
+[424  13 248 199 120 308 105 196 339 336 306 373 305 160 121  78 198  77
+  99  95]
+count 20
+forward_pass use 0.968
+try u4 char: 00084 win: 424 score: 2.83354694843
+try 94 char: 00024 win: 120 score: 4.22236835471
+try ^4 char: 00061 win: 308 score: 8.33258831618
+try ^4 char: 00061 win: 306 score: 8.78780288966
+try ^4 char: 00061 win: 305 score: 9.75489135174
+try 44 char: 00019 win: 99 score: 20.45764748
+try 44 char: 00019 win: 95 score: 20.5007418711
+bwd_pass use 7.357
+fwd_infer use 0.100
+[232 245 337 248 246 399 329 162 105 193 396 394 424 175 177 336  77  95
+  99 400]
+count 20
+forward_pass use 0.973
+try O4 char: 00046 win: 232 score: 5.68782784978
+try R4 char: 00049 win: 245 score: 8.58443601634
+try R4 char: 00049 win: 248 score: 9.70497337598
+try u4 char: 00084 win: 424 score: 10.6334876836
+try 44 char: 00019 win: 95 score: 20.204015941
+try 44 char: 00019 win: 99 score: 21.5928870198
+bwd_pass use 7.500
+fwd_infer use 0.101
+[197 264 121 100 251 391 176 120 326 168 260  92  17  16 329 232 104 105
+ 254 103]
+count 20
+forward_pass use 0.968
+try H5 char: 00039 win: 197 score: 8.30563122138
+try 55 char: 00020 win: 100 score: 11.2976289393
+try B5 char: 00033 win: 168 score: 13.1535520286
+try 35 char: 00018 win: 92 score: 14.2605196587
+try $5 char: 00003 win: 17 score: 15.8677908149
+try 55 char: 00020 win: 104 score: 19.2596156918
+try S5 char: 00050 win: 254 score: 21.4422279054
+try 55 char: 00020 win: 103 score: 22.5110041037
+bwd_pass use 4.802
+fwd_infer use 0.100
+[123  98 252 254  92  90 328  75 119 116 414 107 180 106 184  18 108 191
+ 102 253]
+count 20
+forward_pass use 0.972
+try 95 char: 00024 win: 123 score: 12.5351721607
+try S5 char: 00050 win: 254 score: 13.7722278632
+try 85 char: 00023 win: 119 score: 15.3398216604
+try s5 char: 00082 win: 414 score: 20.7069768789
+try 55 char: 00020 win: 102 score: 22.2325701859
+try S5 char: 00050 win: 253 score: 22.5099591728
+bwd_pass use 3.659
+fwd_infer use 0.099
+[397 455  37 403 124 200 338 390  36 191 236 107 108 328 392  39 389  75
+ 359 356]
+count 20
+forward_pass use 0.973
+try p6 char: 00079 win: 397 score: 7.01918279776
+try (6 char: 00007 win: 37 score: 8.10322386303
+try q6 char: 00080 win: 403 score: 8.33974734669
+try I6 char: 00040 win: 200 score: 8.69538777016
+try o6 char: 00078 win: 390 score: 11.6392672451
+try 66 char: 00021 win: 108 score: 11.7664384145
+try o6 char: 00078 win: 392 score: 12.6432653376
+try h6 char: 00071 win: 359 score: 14.3752623822
+try h6 char: 00071 win: 356 score: 14.3862823423
+bwd_pass use 4.267
+fwd_infer use 0.098
+[261 336  78 196 179 186 104 170 168 394 193 357 391 103 251 329 194 232
+ 182 105]
+count 20
+forward_pass use 0.970
+try U6 char: 00052 win: 261 score: 9.6810195228
+try d6 char: 00067 win: 336 score: 13.3626999425
+try 06 char: 00015 win: 78 score: 16.448970743
+try F6 char: 00037 win: 186 score: 16.4901734975
+try 56 char: 00020 win: 104 score: 20.1781281894
+try 66 char: 00021 win: 105 score: 24.5409513133
+bwd_pass use 5.193
+fwd_infer use 0.100
+[294  82 151 255 378 154 112 416 201 452 457 292 113 377 257 456  37 454
+ 291  39]
+count 20
+forward_pass use 0.968
+try [7 char: 00058 win: 294 score: 5.21536818398
+try 17 char: 00016 win: 82 score: 10.1608641873
+try ?7 char: 00030 win: 151 score: 12.0755317133
+try 77 char: 00022 win: 113 score: 12.9040237088
+bwd_pass use 3.154
+fwd_infer use 0.097
+[407 442 110 287 281 209 259 256  72 204  81 303  74 284  88 153 289 147
+ 152 114]
+count 20
+forward_pass use 0.956
+try r7 char: 00081 win: 407 score: 7.48112012417
+try Z7 char: 00057 win: 287 score: 10.3640168589
+try T7 char: 00051 win: 259 score: 10.5902327295
+try ?7 char: 00030 win: 153 score: 14.5820902585
+bwd_pass use 4.355
+fwd_infer use 0.097
+[371 401 120 195 176 160 235 254  27 249 335  26 163  92 276  28 248 165
+ 168 246]
+count 20
+forward_pass use 0.982
+try k8 char: 00074 win: 371 score: 10.7221746521
+try 98 char: 00024 win: 120 score: 12.2512478421
+try H8 char: 00039 win: 195 score: 12.6741741997
+try &8 char: 00005 win: 27 score: 17.155928113
+try 38 char: 00018 win: 92 score: 17.9153467703
+try B8 char: 00033 win: 165 score: 20.004329377
+bwd_pass use 9.493
+fwd_infer use 0.106
+[117 352  25 335 328 253 356  90 237  75 327 239  93 191 180 351 108 184
+ 119 116]
+count 20
+forward_pass use 0.994
+try 88 char: 00023 win: 117 score: 19.2860532181
+try S8 char: 00050 win: 253 score: 19.2956521146
+try 88 char: 00023 win: 119 score: 25.1692009352
+try 88 char: 00023 win: 116 score: 25.2824980008
+bwd_pass use 6.511
+fwd_infer use 0.101
+[193 168 159 118 177 262 175 260 350 251 179 232 176 194  77 240  78 120
+ 230 121]
+count 20
+forward_pass use 0.977
+try G9 char: 00038 win: 193 score: 12.3644419443
+try B9 char: 00033 win: 168 score: 15.404810712
+try 89 char: 00023 win: 118 score: 17.1568900384
+try S9 char: 00050 win: 251 score: 18.2598771705
+try 99 char: 00024 win: 120 score: 24.1975973021
+bwd_pass use 7.767
+fwd_infer use 0.099
+[333  87 328 392 239 180 351 108  93 122 342 184 102 101  90 388  76 253
+  75 124]
+count 20
+forward_pass use 0.979
+try c9 char: 00066 win: 333 score: 10.3059211653
+try 29 char: 00017 win: 87 score: 11.6247511741
+try b9 char: 00065 win: 328 score: 13.5968995901
+try o9 char: 00078 win: 392 score: 16.4913442062
+try 99 char: 00024 win: 122 score: 18.7128861932
+try 99 char: 00024 win: 124 score: 19.4595035446
+bwd_pass use 5.259
+fwd_infer use 0.104
+[408 414   9  48  34 468  33  59  56 415 319  55   1  62 129 318  61  63
+  64  32]
+count 20
+forward_pass use 0.954
+try r: char: 00081 win: 408 score: 0.53519588281
+try ': char: 00006 win: 34 score: 1.55399698689
+try t: char: 00083 win: 415 score: 2.95538902485
+try ,: char: 00011 win: 55 score: 3.02317657345
+try :: char: 00025 win: 129 score: 3.88784189063
+bwd_pass use 1.095
+fwd_infer use 0.109
+[466 405 129 419 139 314 301  67 364   7 445 330  64  66 451 219  68  65
+ 126 127]
+count 20
+forward_pass use 0.959
+try ~: char: 00093 win: 466 score: -1.77160382885
+try :: char: 00025 win: 129 score: -0.108922721281
+try ": char: 00001 win: 7 score: -0.0484938813875
+try -: char: 00012 win: 64 score: 0.239117392855
+try .: char: 00013 win: 66 score: 3.14966243865
+try .: char: 00013 win: 65 score: 3.63545002998
+try :: char: 00025 win: 126 score: 6.61962835764
+try :: char: 00025 win: 127 score: 6.7909381921
+bwd_pass use 1.733
+fwd_infer use 0.099
+[133 153 407 127  55 465 405  30   0  67 204 203 330  58 418  66 128  65
+  68 126]
+count 20
+forward_pass use 0.968
+try ;; char: 00026 win: 133 score: -2.21720908122
+try r; char: 00081 win: 407 score: -1.10932015102
+try :; char: 00025 win: 127 score: -0.298772112649
+try ,; char: 00011 win: 55 score: 2.11086348062
+try .; char: 00013 win: 67 score: 3.01223282591
+try .; char: 00013 win: 66 score: 3.01666949759
+try :; char: 00025 win: 128 score: 6.04796900736
+try :; char: 00025 win: 126 score: 6.19804596174
+bwd_pass use 1.481
+fwd_infer use 0.105
+[ 68   7 311 139  33  30  55 128  67  69  66 364 330  57 418  58 129  65
+ 133 126]
+count 20
+forward_pass use 0.966
+try .; char: 00013 win: 68 score: 1.49984831373
+try ,; char: 00011 win: 55 score: 3.13309060265
+try :; char: 00025 win: 128 score: 3.66587861922
+try :; char: 00025 win: 129 score: 6.64508000228
+bwd_pass use 1.022
+fwd_infer use 0.106
+[407 142 434 425 468  53  51 411 147 135  50 100  95 279 469 173 465 251
+ 137 144]
+count 20
+forward_pass use 0.955
+try r< char: 00081 win: 407 score: -0.460931797349
+try v< char: 00085 win: 425 score: 0.430749840006
+try +< char: 00010 win: 53 score: 0.979522472998
+try << char: 00027 win: 135 score: 2.07832571114
+try 4< char: 00019 win: 95 score: 3.12588787546
+try ~< char: 00093 win: 469 score: 3.28300793348
+try ~< char: 00093 win: 465 score: 4.60964972458
+try << char: 00027 win: 137 score: 14.3659014015
+bwd_pass use 2.851
+fwd_infer use 0.098
+[429 210 391 109 448 211 405 137 193 433 330 141 447 334 287 332 139 142
+ 250 135]
+count 20
+forward_pass use 0.963
+try v< char: 00085 win: 429 score: 1.41638919415
+try 6< char: 00021 win: 109 score: 1.95250972353
+try z< char: 00089 win: 448 score: 2.48596621667
+try << char: 00027 win: 137 score: 4.11295523513
+try z< char: 00089 win: 447 score: 6.42536887975
+try c< char: 00066 win: 334 score: 6.84242511423
+try << char: 00027 win: 139 score: 7.50534009641
+try S< char: 00050 win: 250 score: 7.71042409632
+try << char: 00027 win: 135 score: 14.4293469613
+bwd_pass use 3.394
+fwd_infer use 0.102
+[150  63 413 236  62  60 466 446  64 142 146 148 392 141 340 145 310 343
+ 140 143]
+count 20
+forward_pass use 0.963
+try ?= char: 00030 win: 150 score: 0.398401584622
+try -= char: 00012 win: 63 score: 4.10530834564
+try z= char: 00089 win: 446 score: 6.67457144967
+try >= char: 00029 win: 148 score: 7.13422079746
+try == char: 00028 win: 140 score: 8.4660448516
+try == char: 00028 win: 143 score: 14.7475438419
+bwd_pass use 5.584
+fwd_infer use 0.108
+[445 405 153 126 410  66 149 311  68 423 141  65 334 127  52 447 332 137
+ 135 142]
+count 20
+forward_pass use 0.951
+try z= char: 00089 win: 445 score: 0.0916263049276
+try r= char: 00081 win: 405 score: 1.82876540458
+try := char: 00025 win: 126 score: 2.04572077233
+try u= char: 00084 win: 423 score: 4.06092318913
+try c= char: 00066 win: 334 score: 4.39906876918
+try c= char: 00066 win: 332 score: 5.04528442591
+try <= char: 00027 win: 135 score: 5.57871400635
+try == char: 00028 win: 142 score: 12.4891247628
+bwd_pass use 2.029
+fwd_infer use 0.098
+[343 310  62 446 443  61  65  63 323 252  64 438 102  60 467 145 466 236
+ 146 148]
+count 20
+forward_pass use 0.968
+try e> char: 00068 win: 343 score: -1.25239780923
+try _> char: 00062 win: 310 score: 3.9504048688
+try >> char: 00029 win: 145 score: 4.22170975816
+try ~> char: 00093 win: 466 score: 5.54089272122
+try >> char: 00029 win: 146 score: 12.9604041834
+bwd_pass use 4.309
+fwd_infer use 0.113
+[ 90  87 412 239 125 319  62  64 141 333 342 148  18 467 469 468 150 140
+ 414 145]
+count 20
+forward_pass use 0.962
+try 3> char: 00018 win: 90 score: -0.104033264414
+try 2> char: 00017 win: 87 score: 3.52661315266
+try :> char: 00025 win: 125 score: 3.77995780613
+try ~> char: 00093 win: 467 score: 5.93826888507
+try => char: 00028 win: 140 score: 7.7977964395
+try s> char: 00082 win: 414 score: 9.37293586005
+try >> char: 00029 win: 145 score: 13.0045632983
+bwd_pass use 2.904
+fwd_infer use 0.119
+[ 84 284 110  77 204 287  86 442  81  72  89  85  74 147 322 289  88 152
+ 153 114]
+count 20
+forward_pass use 0.964
+try 1? char: 00016 win: 84 score: 4.6077710612
+try 7? char: 00022 win: 110 score: 5.54166723986
+try I? char: 00040 win: 204 score: 6.78983963851
+try Z? char: 00057 win: 287 score: 7.74564080242
+try >? char: 00029 win: 147 score: 10.6025555538
+try ?? char: 00030 win: 152 score: 15.3105660127
+try ?? char: 00030 win: 153 score: 15.9248020929
+bwd_pass use 5.571
+fwd_infer use 0.100
+[ 80  65 426 448 281 189 349 364 141 280  92 407 147 405  88 204 186 110
+ 152 153]
+count 20
+forward_pass use 0.963
+try 1? char: 00016 win: 80 score: 2.84790009479
+try .? char: 00013 win: 65 score: 3.36176939357
+try i? char: 00072 win: 364 score: 4.11075410858
+try r? char: 00081 win: 407 score: 5.77522769989
+try ?? char: 00030 win: 152 score: 11.4950885631
+bwd_pass use 4.151
+fwd_infer use 0.102
+[396 176 242 421  21 193 382 230 231 232  24 380 272 155 383 156 240 158
+ 159 157]
+count 20
+forward_pass use 0.985
+try p@ char: 00079 win: 396 score: 8.9430196355
+try D@ char: 00035 win: 176 score: 9.68278161796
+try u@ char: 00084 win: 421 score: 12.8918116976
+try G@ char: 00038 win: 193 score: 14.6772740766
+try O@ char: 00046 win: 231 score: 18.560661922
+try Q@ char: 00048 win: 240 score: 19.6291672192
+try @@ char: 00031 win: 158 score: 37.9006467861
+try @@ char: 00031 win: 159 score: 42.2801896306
+try @@ char: 00031 win: 157 score: 43.7767600069
+bwd_pass use 13.942
+fwd_infer use 0.103
+[234 391 105 232 231 383 380 263 166 233 381 240 193 194 382 230 159 155
+ 158 157]
+count 20
+forward_pass use 0.982
+try O@ char: 00046 win: 234 score: 11.3852880174
+try o@ char: 00078 win: 391 score: 12.52811814
+try 6@ char: 00021 win: 105 score: 15.8173284731
+try O@ char: 00046 win: 230 score: 18.0502215108
+try @@ char: 00031 win: 159 score: 19.574045883
+try @@ char: 00031 win: 155 score: 34.0459588027
+try @@ char: 00031 win: 158 score: 43.9599187746
+try @@ char: 00031 win: 157 score: 45.1474913689
+bwd_pass use 10.895
+fwd_infer use 0.105
+[ 99 122 302 379 458  71 335  97  98 389 461 359  38 388  96  75 161 164
+  76 160]
+count 20
+forward_pass use 0.982
+try 4A char: 00019 win: 99 score: 10.6013768701
+try lA char: 00075 win: 379 score: 10.736971213
+try 4A char: 00019 win: 97 score: 11.8849859507
+try 4A char: 00019 win: 98 score: 13.6655494391
+try 4A char: 00019 win: 96 score: 14.3575305932
+try AA char: 00032 win: 161 score: 18.2906956205
+bwd_pass use 3.304
+fwd_infer use 0.098
+[305 188 456 262  95 395 420  72 162 186 336 235 121 247 166 355 199  78
+ 227 226]
+count 20
+forward_pass use 0.969
+try ^A char: 00061 win: 305 score: -inf
+try FA char: 00037 win: 188 score: 9.80407129855
+try 4A char: 00019 win: 95 score: 10.4157786453
+try AA char: 00032 win: 162 score: 19.2547767257
+bwd_pass use 6.408
+fwd_infer use 0.110
+[226 396 395 170 247 121 245 230 251 393 199 115 231 263 118 196 175 177
+ 350 166]
+count 20
+forward_pass use 1.103
+try NB char: 00045 win: 226 score: 8.64436043033
+try pB char: 00079 win: 396 score: 16.8429559156
+try CB char: 00034 win: 170 score: 17.5160531119
+try RB char: 00049 win: 245 score: 17.5573906614
+try 8B char: 00023 win: 115 score: 19.2066369015
+try 8B char: 00023 win: 118 score: 24.8684837525
+try BB char: 00033 win: 166 score: 25.8854245713
+bwd_pass use 7.563
+fwd_infer use 0.107
+[230 160  92 264 171 174 238 193 239 243 232 234 194 249 168 179 197 327
+ 176 165]
+count 20
+forward_pass use 1.011
+try OB char: 00046 win: 230 score: 13.5936079062
+try AB char: 00032 win: 160 score: 13.7358053254
+try 3B char: 00018 win: 92 score: 17.4875728994
+try CB char: 00034 win: 174 score: 19.2911998659
+try PB char: 00047 win: 238 score: 19.6323164541
+try GB char: 00038 win: 193 score: 21.8608440093
+try DB char: 00035 win: 179 score: 22.0759308322
+try BB char: 00033 win: 165 score: 27.3252206386
+bwd_pass use 4.239
+fwd_infer use 0.105
+[419 302 391 332 263 246 451 255 314 118 334 115 250 238 179 219 405 193
+ 157 230]
+count 20
+forward_pass use 1.066
+try tC char: 00083 win: 419 score: 6.08745883524
+try cC char: 00066 win: 332 score: 7.52754591403
+try 8C char: 00023 win: 118 score: 7.88497622542
+try cC char: 00066 win: 334 score: 8.42285299826
+try SC char: 00050 win: 250 score: 9.46041554946
+try LC char: 00043 win: 219 score: 11.7798125758
+try rC char: 00081 win: 405 score: 11.8097826131
+bwd_pass use 5.311
+fwd_infer use 0.111
+[349 292 165 298 182  37 218 215 217 290 179 230 240 232 176 171 193 194
+ 172 174]
+count 20
+forward_pass use 1.001
+try fC char: 00069 win: 349 score: 8.30715070628
+try EC char: 00036 win: 182 score: 10.0110608581
+try LC char: 00043 win: 218 score: 12.149860238
+try OC char: 00046 win: 232 score: 13.2131940851
+try CC char: 00034 win: 171 score: 17.3330008967
+try CC char: 00034 win: 174 score: 18.4419797183
+bwd_pass use 3.969
+fwd_infer use 0.103
+[231 121 424 120 170  77 263 329 166 240 194 261 262  78 260 176 179 175
+ 177 232]
+count 20
+forward_pass use 1.009
+try OD char: 00046 win: 231 score: 18.2545969373
+try uD char: 00084 win: 424 score: 18.5891534141
+try CD char: 00034 win: 170 score: 20.4290777059
+try 0D char: 00015 win: 77 score: 21.1495208157
+try 0D char: 00015 win: 78 score: 25.5363879347
+try DD char: 00035 win: 175 score: 26.5920695301
+try DD char: 00035 win: 177 score: 26.8066217809
+try OD char: 00046 win: 232 score: 26.9604989288
+bwd_pass use 6.326
+fwd_infer use 0.102
+[114  74 288 263  72 251  81  89  88 459 262 182 216  80 284 420 173 170
+  78 231]
+count 20
+forward_pass use 0.988
+try 7D char: 00022 win: 114 score: 6.44637190846
+try SD char: 00050 win: 251 score: 7.6642726673
+try 1D char: 00016 win: 81 score: 8.32749492197
+try 2D char: 00017 win: 89 score: 8.96464429521
+try ED char: 00036 win: 182 score: 9.26285207217
+try CD char: 00034 win: 173 score: 21.7211635327
+try OD char: 00046 win: 231 score: 29.6077980439
+bwd_pass use 7.122
+fwd_infer use 0.102
+[373 280 349 103 357 172 288 173 247 216 170 196 214 245 329 186 168 181
+ 182 189]
+count 20
+forward_pass use 1.098
+try kE char: 00074 win: 373 score: 11.49515156
+try YE char: 00056 win: 280 score: 11.6508600602
+try 5E char: 00020 win: 103 score: 11.7709322405
+try hE char: 00071 win: 357 score: 13.2010230922
+try CE char: 00034 win: 172 score: 15.5108975531
+try CE char: 00034 win: 173 score: 16.4548692113
+try CE char: 00034 win: 170 score: 16.5492129188
+try EE char: 00036 win: 181 score: 23.0886331904
+bwd_pass use 5.554
+fwd_infer use 0.110
+[253  25 392 377 140 119 116 345 183 342 333 102 180 237 328 171 107 108
+ 191 106]
+count 20
+forward_pass use 1.042
+try SE char: 00050 win: 253 score: 10.220906506
+try 8E char: 00023 win: 119 score: 12.8126081858
+try 8E char: 00023 win: 116 score: 13.3191593903
+try 5E char: 00020 win: 102 score: 13.4145604885
+try EE char: 00036 win: 180 score: 14.254684334
+try CE char: 00034 win: 171 score: 16.1034450579
+try 6E char: 00021 win: 108 score: 17.1922826303
+try 6E char: 00021 win: 106 score: 17.4815508473
+bwd_pass use 3.922
+fwd_infer use 0.108
+[ 37 208 361 191  40 304 187  36 180 378  39 200 333 369 294 455 239 462
+ 185 184]
+count 20
+forward_pass use 1.070
+try (F char: 00007 win: 37 score: 5.37080372178
+try JF char: 00041 win: 208 score: 6.64166559246
+try iF char: 00072 win: 361 score: 7.64343501786
+try FF char: 00037 win: 187 score: 8.25977536016
+try lF char: 00075 win: 378 score: 9.50896176596
+try |F char: 00091 win: 455 score: 10.1520010314
+try PF char: 00047 win: 239 score: 11.4475332132
+try FF char: 00037 win: 185 score: 12.3983179499
+bwd_pass use 3.926
+fwd_infer use 0.100
+[249 454 198 201 452  39 246 377 375 457 349 456 182 292 107 235 168 238
+ 189 186]
+count 20
+forward_pass use 0.988
+try RF char: 00049 win: 249 score: 7.47517172441
+try IF char: 00040 win: 201 score: 10.3925134953
+try EF char: 00036 win: 182 score: 12.8347715031
+try PF char: 00047 win: 238 score: 14.3384410632
+try FF char: 00037 win: 189 score: 17.2221032342
+try FF char: 00037 win: 186 score: 20.2883911879
+bwd_pass use 3.396
+fwd_infer use 0.104
+[390  18 123  25  16 102 335  92  75 254 392 241  76 107 328 106 171 234
+ 108 191]
+count 20
+forward_pass use 0.994
+try oG char: 00078 win: 390 score: 10.373268045
+try 9G char: 00024 win: 123 score: 11.1824394481
+try 5G char: 00020 win: 102 score: 13.7595244084
+try 6G char: 00021 win: 107 score: 18.3817694084
+try 6G char: 00021 win: 106 score: 19.9802839478
+try CG char: 00034 win: 171 score: 20.6931548024
+try 6G char: 00021 win: 108 score: 23.6728762354
+try GG char: 00038 win: 191 score: 26.0696888827
+bwd_pass use 12.589
+fwd_infer use 0.256
+[230 227 226 216  38 159 383 355  78 350 262 251 263 190 192 233 173 170
+ 166 231]
+count 20
+forward_pass use 2.838
+try OG char: 00046 win: 230 score: 10.7655520751
+try 0G char: 00015 win: 78 score: 17.507815785
+try GG char: 00038 win: 190 score: 20.2307616209
+try GG char: 00038 win: 192 score: 22.2925179139
+try CG char: 00034 win: 173 score: 22.3226742354
+try CG char: 00034 win: 170 score: 22.7937659937
+bwd_pass use 18.106
+fwd_infer use 0.107
+[298 290 460 458 230 261 456 457 186 214 235 461 260 262 198 227 226 355
+ 199 196]
+count 20
+forward_pass use 1.025
+try \H char: 00059 win: 298 score: 11.170044301
+try FH char: 00037 win: 186 score: 11.4478470177
+try KH char: 00042 win: 214 score: 16.1504068523
+try UH char: 00052 win: 260 score: 16.8773425304
+try NH char: 00045 win: 227 score: 17.8797547174
+try NH char: 00045 win: 226 score: 18.0852407418
+try hH char: 00071 win: 355 score: 19.1726197146
+try HH char: 00039 win: 199 score: 21.52165078
+try HH char: 00039 win: 196 score: 30.5053696103
+bwd_pass use 13.708
+fwd_infer use 0.098
+[461 166 224 459 458 203 199  78 451 204 395 196 303 420  42 355 263 262
+ 226 227]
+count 20
+forward_pass use 0.967
+try }H char: 00092 win: 461 score: 6.61149543672
+try BH char: 00033 win: 166 score: 9.62417778221
+try IH char: 00040 win: 203 score: 10.9970893433
+try HH char: 00039 win: 199 score: 12.2824213742
+try hH char: 00071 win: 355 score: 14.0271854025
+try UH char: 00052 win: 263 score: 15.6847983846
+bwd_pass use 5.385
+fwd_infer use 0.116
+[364 461  41 379 281  74 219 418 440   0 459 457  72 203 458 456 451 204
+ 303  42]
+count 20
+forward_pass use 0.990
+try iI char: 00072 win: 364 score: 7.2666104262
+try tI char: 00083 win: 418 score: 7.35167854297
+try !I char: 00000 win: 0 score: 9.65688605767
+try {I char: 00090 win: 451 score: 10.4890072249
+try II char: 00040 win: 204 score: 11.4092182379
+bwd_pass use 3.035
+fwd_infer use 0.100
+[375  41  80 464 349 300 295 452  82 203 459 456 457 379 290 376 201 458
+  44  43]
+count 20
+forward_pass use 0.974
+try lI char: 00075 win: 375 score: 5.05024848793
+try )I char: 00008 win: 41 score: 5.84186865369
+try 1I char: 00016 win: 80 score: 7.21952553613
+try fI char: 00069 win: 349 score: 8.89136147912
+try \I char: 00059 win: 295 score: 11.1892114434
+try II char: 00040 win: 203 score: 11.8674737927
+try |I char: 00091 win: 459 score: 11.8951273425
+try lI char: 00075 win: 376 score: 12.4455397611
+bwd_pass use 2.633
+fwd_infer use 0.103
+[347 458 296 292 113 377 338 379 456 201 203 295 206 376 457 464  43 207
+  44 300]
+count 20
+forward_pass use 0.966
+try fJ char: 00069 win: 347 score: 5.84110566407
+try [J char: 00058 win: 292 score: 6.67184810702
+try lJ char: 00075 win: 377 score: 8.84412226564
+try IJ char: 00040 win: 203 score: 9.57183468367
+try JJ char: 00041 win: 206 score: 10.9462800076
+try }J char: 00092 win: 464 score: 11.0302323665
+try JJ char: 00041 win: 207 score: 13.3205761071
+bwd_pass use 4.278
+fwd_infer use 0.104
+[251 121 337 120  91  72  88  86 420 336 261 423 339  42 262 260  84 205
+  81 209]
+count 20
+forward_pass use 0.976
+try SJ char: 00050 win: 251 score: 3.92555533729
+try 2J char: 00017 win: 86 score: 4.97795352724
+try uJ char: 00084 win: 420 score: 5.56401361303
+try UJ char: 00052 win: 261 score: 6.42342331903
+try dJ char: 00067 win: 339 score: 6.50975379166
+try UJ char: 00052 win: 260 score: 7.54704179571
+try 1J char: 00016 win: 84 score: 10.5725810379
+try JJ char: 00041 win: 205 score: 13.9654844239
+bwd_pass use 4.310
+fwd_infer use 0.119
+[460 327 462 165 278 371 426 325 277 276 281 265 280 249 269 266 370 211
+ 210 213]
+count 20
+forward_pass use 1.044
+try }K char: 00092 win: 460 score: 9.66263610809
+try XK char: 00055 win: 278 score: 15.030037744
+try XK char: 00055 win: 277 score: 17.6293890589
+try KK char: 00042 win: 211 score: 20.2314487314
+try KK char: 00042 win: 210 score: 21.6525828049
+bwd_pass use 3.850
+fwd_infer use 0.107
+[ 98 335   3 349 371 108 202 255 388 392 267 299 257 356 345 297 338 389
+ 328 212]
+count 20
+forward_pass use 1.023
+try 4K char: 00019 win: 98 score: 5.26392246165
+try !K char: 00000 win: 3 score: 8.9948269065
+try IK char: 00040 win: 202 score: 9.9927121374
+try nK char: 00077 win: 389 score: 10.2541121393
+try bK char: 00065 win: 328 score: 10.4390655916
+try KK char: 00042 win: 212 score: 22.7967172688
+bwd_pass use 4.232
+fwd_infer use 0.116
+[  4 347 371 453  39 333 415 171  36  25 328   3 108 297  35 376 345  37
+ 377 202]
+count 20
+forward_pass use 1.108
+try !L char: 00000 win: 4 score: 4.00047071791
+try kL char: 00074 win: 371 score: 4.20712770918
+try {L char: 00090 win: 453 score: 4.52464191678
+try cL char: 00066 win: 333 score: 5.28596406894
+try tL char: 00083 win: 415 score: 7.87981634504
+try lL char: 00075 win: 377 score: 8.30823628246
+try IL char: 00040 win: 202 score: 10.9608721564
+bwd_pass use 3.415
+fwd_infer use 0.101
+[418 346 290 456 461  38 217  44 457 458 459 299 295 216 203  41 218  43
+ 379 296]
+count 20
+forward_pass use 0.983
+try tL char: 00083 win: 418 score: 11.0862883378
+try |L char: 00091 win: 459 score: 11.2168541301
+try \L char: 00059 win: 299 score: 11.3148515782
+bwd_pass use 2.718
+fwd_infer use 0.099
+[163 426 197 416 211 420 441 423 265 381 422 430 431 225 262 261 432 229
+ 260 228]
+count 20
+forward_pass use 0.993
+try AM char: 00032 win: 163 score: 8.62313273417
+try tM char: 00083 win: 416 score: 9.95827736452
+try uM char: 00084 win: 423 score: 13.006775708
+try wM char: 00086 win: 432 score: 14.301857866
+try UM char: 00052 win: 260 score: 15.2391064607
+try NM char: 00045 win: 228 score: 16.4358566837
+bwd_pass use 9.904
+fwd_infer use 0.105
+[329  38 442 461 179 420 198 373 272  77  78 214 424 196 229 355 199 261
+ 262 260]
+count 20
+forward_pass use 1.050
+try bM char: 00065 win: 329 score: 11.8173846359
+try uM char: 00084 win: 420 score: 13.6139357829
+try uM char: 00084 win: 424 score: 18.089531349
+bwd_pass use 8.932
+fwd_infer use 0.102
+[400 199 163 175 177 424 273 355 261 263 214 262 260 198 196 272 270 226
+ 227 229]
+count 20
+forward_pass use 1.079
+try qN char: 00080 win: 400 score: 7.00925742105
+try HN char: 00039 win: 199 score: 12.4172493413
+try AN char: 00032 win: 163 score: 14.6987492033
+try uN char: 00084 win: 424 score: 16.5111086944
+try KN char: 00042 win: 214 score: 17.207097559
+try HN char: 00039 win: 198 score: 17.7126299159
+try HN char: 00039 win: 196 score: 19.3302619908
+try WN char: 00054 win: 270 score: 20.3384891833
+try NN char: 00045 win: 226 score: 28.0580179712
+bwd_pass use 7.262
+fwd_infer use 0.101
+[400 199 163 175 177 424 273 355 261 263 214 262 260 198 196 272 270 226
+ 227 229]
+count 20
+forward_pass use 0.983
+try qN char: 00080 win: 400 score: 7.02092077215
+try HN char: 00039 win: 199 score: 12.3873546333
+try AN char: 00032 win: 163 score: 14.6843779269
+try uN char: 00084 win: 424 score: 17.0611995331
+try KN char: 00042 win: 214 score: 17.1154509685
+try HN char: 00039 win: 196 score: 18.65765977
+try WN char: 00054 win: 270 score: 19.3167237982
+try NN char: 00045 win: 226 score: 28.1772724455
+try NN char: 00045 win: 227 score: 28.3344928473
+bwd_pass use 9.150
+fwd_infer use 0.100
+[394 182 192 175 177 420 121 173 193 170 261 240 260 263 230  78 262 159
+ 231 232]
+count 20
+forward_pass use 0.969
+try oO char: 00078 win: 394 score: 22.0045792138
+try OO char: 00046 win: 230 score: 23.8503656489
+try 0O char: 00015 win: 78 score: 29.80328477
+try OO char: 00046 win: 231 score: 29.9665063217
+try OO char: 00046 win: 232 score: 30.1558045592
+bwd_pass use 4.907
+fwd_infer use 0.101
+[386 391 396 243 264 174 193 261 178 194  77 158  79 260 179 232 240 234
+ 176 230]
+count 20
+forward_pass use 1.026
+try nO char: 00077 win: 386 score: 17.1038018194
+try UO char: 00052 win: 264 score: 19.2156185125
+try UO char: 00052 win: 261 score: 19.2479893119
+try DO char: 00035 win: 178 score: 19.4858473403
+try GO char: 00038 win: 194 score: 20.2561842211
+try 0O char: 00015 win: 79 score: 21.0879487096
+try UO char: 00052 win: 260 score: 21.3941498088
+try DO char: 00035 win: 179 score: 24.9666598265
+try OO char: 00046 win: 232 score: 27.3677847709
+bwd_pass use 6.614
+fwd_infer use 0.104
+[266 304 165 257  39 241 291  36  77 463 388 185  75 244 249  76 243 234
+ 239 238]
+count 20
+forward_pass use 1.019
+try VP char: 00053 win: 266 score: 4.63952283716
+try ]P char: 00060 win: 304 score: 7.2279066241
+try BP char: 00033 win: 165 score: 12.3052318921
+try FP char: 00037 win: 185 score: 14.3190411543
+try PP char: 00047 win: 239 score: 21.497606922
+bwd_pass use 4.391
+fwd_infer use 0.109
+[183 154  25 110 241  76 124 108 202 180 123 244 342 388 453  75 239 106
+ 184 237]
+count 20
+forward_pass use 1.035
+try EP char: 00036 win: 183 score: 6.38144396721
+try 0P char: 00015 win: 76 score: 6.47754527275
+try EP char: 00036 win: 180 score: 9.6034018707
+try eP char: 00068 win: 342 score: 12.8437251147
+try PP char: 00047 win: 237 score: 18.7267117217
+bwd_pass use 6.737
+fwd_infer use 0.113
+[459 227 226 381  78 233 217 172 190 383 380 216 242 170 263 173 192 262
+ 231 159]
+count 20
+forward_pass use 1.020
+try |Q char: 00091 win: 459 score: 5.731791097
+try mQ char: 00076 win: 381 score: 8.11635035241
+try CQ char: 00034 win: 172 score: 9.31013967116
+try GQ char: 00038 win: 190 score: 11.1161649762
+try QQ char: 00048 win: 242 score: 16.3363535149
+try OQ char: 00046 win: 231 score: 18.229161401
+bwd_pass use 7.142
+fwd_infer use 0.117
+[396 170 263 394 120 261 193 157 194 175  78 177 262 260 179 176 232 158
+ 240 230]
+count 20
+forward_pass use 1.010
+try pQ char: 00079 win: 396 score: 17.9722853118
+try CQ char: 00034 win: 170 score: 19.7473465678
+try oQ char: 00078 win: 394 score: 21.9629661266
+try DQ char: 00035 win: 179 score: 23.5492584245
+try OQ char: 00046 win: 232 score: 25.0798524968
+try QQ char: 00048 win: 240 score: 25.967137108
+try OQ char: 00046 win: 230 score: 25.9984943107
+bwd_pass use 5.787
+fwd_infer use 0.108
+[373 118 166 210 400 232 199 168 186  78 395 238 247 198 235  77 196 245
+ 246 248]
+count 20
+forward_pass use 1.020
+try kR char: 00074 win: 373 score: 16.7554458616
+try 8R char: 00023 win: 118 score: 19.212373776
+try PR char: 00047 win: 238 score: 20.5582542854
+try RR char: 00049 win: 247 score: 21.5871134953
+try RR char: 00049 win: 245 score: 25.5385098647
+try RR char: 00049 win: 246 score: 26.4209962261
+try RR char: 00049 win: 248 score: 27.4788067634
+bwd_pass use 6.077
+fwd_infer use 0.110
+[124 402 340 122 389  90 333 108 356 180 294 185 353 388 184 351  76 359
+  75 239]
+count 20
+forward_pass use 1.011
+try 9R char: 00024 win: 124 score: 9.74411530288
+try eR char: 00068 win: 340 score: 11.9525776326
+try nR char: 00077 win: 389 score: 13.8105235959
+try gR char: 00070 win: 353 score: 16.8108098256
+try PR char: 00047 win: 239 score: 17.7436986851
+bwd_pass use 4.284
+fwd_infer use 0.107
+[213  15  93  18  28 180 278 165 184 327 212 122 102 356 254 191 107 253
+ 414 252]
+count 20
+forward_pass use 1.023
+try KS char: 00042 win: 213 score: 6.68356557064
+try $S char: 00003 win: 15 score: 10.9528101854
+try 6S char: 00021 win: 107 score: 11.9383224899
+try SS char: 00050 win: 253 score: 13.8184088403
+try sS char: 00082 win: 414 score: 16.9165467625
+try SS char: 00050 win: 252 score: 22.0663083323
+bwd_pass use 7.039
+fwd_infer use 0.104
+[234 138 136  92 102 171 174 327 252 253 191 411 184  17 107 165 122 254
+ 180 414]
+count 20
+forward_pass use 0.986
+try OS char: 00046 win: 234 score: 7.19691138102
+try <S char: 00027 win: 138 score: 11.6604176176
+try CS char: 00034 win: 174 score: 12.4794488035
+try SS char: 00050 win: 252 score: 16.627757872
+try sS char: 00082 win: 411 score: 17.3671243024
+try SS char: 00050 win: 254 score: 17.7173604865
+try sS char: 00082 win: 414 score: 23.1124293
+bwd_pass use 4.690
+fwd_infer use 0.101
+[216 207 300 203 459 376 349 290 348  43 172 256 379 201 113 189 112 257
+ 286 258]
+count 20
+forward_pass use 0.980
+try LT char: 00043 win: 216 score: 7.65214250119
+try IT char: 00040 win: 203 score: 8.91147417795
+try lT char: 00075 win: 376 score: 9.34134657841
+try TT char: 00051 win: 256 score: 10.8225678013
+try lT char: 00075 win: 379 score: 11.2931750072
+try 7T char: 00022 win: 113 score: 13.4225570428
+try TT char: 00051 win: 258 score: 16.9544122064
+bwd_pass use 3.084
+fwd_infer use 0.105
+[255 238 375 203 348  43 452 256  82 257 286 189 201 457 110 379 456 290
+ 258 112]
+count 20
+forward_pass use 1.003
+try TT char: 00051 win: 255 score: 8.55554852823
+try 1T char: 00016 win: 82 score: 10.323176876
+try IT char: 00040 win: 201 score: 10.4477134971
+try 7T char: 00022 win: 110 score: 12.6493430713
+try TT char: 00051 win: 258 score: 13.6674016237
+bwd_pass use 4.047
+fwd_infer use 0.099
+[ 79 198 423 215 290 329 240 176 232 229 196 179 177 230 175 424 261 260
+ 262 264]
+count 20
+forward_pass use 0.989
+try 0U char: 00015 win: 79 score: 12.8111485601
+try HU char: 00039 win: 198 score: 14.1258671743
+try uU char: 00084 win: 423 score: 17.1277052466
+try OU char: 00046 win: 232 score: 18.0418943134
+try DU char: 00035 win: 177 score: 18.0858057237
+try DU char: 00035 win: 175 score: 18.0976278011
+try uU char: 00084 win: 424 score: 22.7960179774
+try UU char: 00052 win: 261 score: 23.4589287758
+try UU char: 00052 win: 260 score: 25.3516514491
+try UU char: 00052 win: 262 score: 25.4017779276
+bwd_pass use 5.027
+fwd_infer use 0.098
+[264 177 217 175 209 329 270 216 198 421  78 229 196 420 232 424 263 260
+ 261 262]
+count 20
+forward_pass use 0.989
+try UU char: 00052 win: 264 score: 8.84925192708
+try DU char: 00035 win: 177 score: 13.3422473094
+try LU char: 00043 win: 217 score: 13.7631593361
+try bU char: 00065 win: 329 score: 14.0468040604
+try LU char: 00043 win: 216 score: 14.3273238094
+try uU char: 00084 win: 421 score: 16.0576115007
+try 0U char: 00015 win: 78 score: 16.4680670391
+try uU char: 00084 win: 424 score: 21.4416081861
+try UU char: 00052 win: 261 score: 24.3257534745
+bwd_pass use 4.788
+fwd_infer use 0.100
+[441 458 379 461 426 290  77 425 199 373 357 296 229 235 442 424  41 281
+ 280 284]
+count 20
+forward_pass use 0.977
+try yV char: 00088 win: 441 score: 8.85323903649
+try lV char: 00075 win: 379 score: 11.5589042289
+try vV char: 00085 win: 426 score: 13.5569800925
+try vV char: 00085 win: 425 score: 14.6617798109
+try uV char: 00084 win: 424 score: 14.9842908737
+bwd_pass use 3.468
+fwd_infer use 0.107
+[441  41 357 260  38 262 379 290 458  77 329 218 296 216 196  78 229 442
+ 261 424]
+count 20
+forward_pass use 0.977
+try yV char: 00088 win: 441 score: -inf
+try )V char: 00008 win: 41 score: 6.24919018157
+try hV char: 00071 win: 357 score: 7.08038314181
+try UV char: 00052 win: 260 score: 12.3546762045
+try UV char: 00052 win: 262 score: 14.0473868209
+try HV char: 00039 win: 196 score: 14.2143491427
+try NV char: 00045 win: 229 score: 16.8340956845
+try yV char: 00088 win: 442 score: 18.2297432965
+try uV char: 00084 win: 424 score: 19.189853806
+bwd_pass use 4.896
+fwd_infer use 0.102
+[ 37  79  35 198 358 176 197 269 263 266 442 222  24 227 226 224 221 273
+ 270 272]
+count 20
+forward_pass use 0.998
+try (W char: 00007 win: 37 score: 10.6305560088
+try HW char: 00039 win: 198 score: 10.6677968695
+try hW char: 00071 win: 358 score: 10.9625146584
+try HW char: 00039 win: 197 score: 13.253060071
+try VW char: 00053 win: 269 score: 13.6470829251
+try yW char: 00088 win: 442 score: 14.2546337677
+try WW char: 00054 win: 273 score: 20.4173676464
+try WW char: 00054 win: 270 score: 23.2964841492
+try WW char: 00054 win: 272 score: 33.095895612
+bwd_pass use 7.011
+fwd_infer use 0.100
+[ 37  79  35 198 358 176 197 269 263 266 442 222  24 227 226 224 221 273
+ 270 272]
+count 20
+forward_pass use 1.054
+try (W char: 00007 win: 37 score: 10.4862215641
+try (W char: 00007 win: 35 score: 10.6511721662
+try hW char: 00071 win: 358 score: 11.3179423086
+try HW char: 00039 win: 197 score: 12.9690449218
+try VW char: 00053 win: 269 score: 13.6309089629
+try VW char: 00053 win: 266 score: 13.9347083041
+try yW char: 00088 win: 442 score: 14.660284477
+try WW char: 00054 win: 273 score: 19.7722916228
+try WW char: 00054 win: 270 score: 23.8635622643
+try WW char: 00054 win: 272 score: 33.0507669405
+bwd_pass use 6.246
+fwd_infer use 0.102
+[300 365  71 464 359 223 325 112 438 338 452 119 116 437 213 356 371  15
+ 283 212]
+count 20
+forward_pass use 0.986
+try ]X char: 00060 win: 300 score: 6.84589299131
+try jX char: 00073 win: 365 score: 9.60072658431
+try MX char: 00044 win: 223 score: 9.98069725333
+try 7X char: 00022 win: 112 score: 11.047247335
+try xX char: 00087 win: 437 score: 13.2175343445
+try YX char: 00056 win: 283 score: 14.7841308667
+try KX char: 00042 win: 212 score: 15.8789508687
+bwd_pass use 5.204
+fwd_infer use 0.098
+[372 246 370 283 460 439 456  38 282 280 438 249 265 281 269 266 213 276
+ 277 278]
+count 20
+forward_pass use 1.008
+try kX char: 00074 win: 372 score: 11.2852394833
+try xX char: 00087 win: 439 score: 13.2238194895
+try xX char: 00087 win: 438 score: 19.7751152717
+try XX char: 00055 win: 276 score: 20.1985584435
+try XX char: 00055 win: 277 score: 22.8309918124
+bwd_pass use 4.957
+fwd_infer use 0.101
+[299 223 275  38 459 348 204  74 221 461 276 296 280  72 283 269 266 282
+ 281 265]
+count 20
+forward_pass use 0.980
+try \Y char: 00059 win: 299 score: 9.75117029085
+try IY char: 00040 win: 204 score: 11.004724932
+try XY char: 00055 win: 276 score: 12.7677721996
+try YY char: 00056 win: 282 score: 14.2774183196
+try VY char: 00053 win: 265 score: 14.9998073399
+bwd_pass use 5.391
+fwd_infer use 0.102
+[349 295  74 464 276 461 258  43 203 458  72 379 346 296  41 282 265  44
+ 281 280]
+count 20
+forward_pass use 1.006
+try fY char: 00069 win: 349 score: 6.92250025339
+try \Y char: 00059 win: 295 score: 10.7080614562
+try IY char: 00040 win: 203 score: 11.1641533218
+try lY char: 00075 win: 379 score: 11.3940841163
+try YY char: 00056 win: 282 score: 14.1086910235
+try YY char: 00056 win: 280 score: 15.4475187566
+bwd_pass use 3.346
+fwd_infer use 0.097
+[217 210 281  43 168  92 459 216 456  80 204 110 258  72  88 287  74  89
+ 286 288]
+count 20
+forward_pass use 0.981
+try LZ char: 00043 win: 217 score: 8.694366881
+try YZ char: 00056 win: 281 score: 11.1238422361
+try IZ char: 00040 win: 204 score: 13.2526069765
+try 7Z char: 00022 win: 110 score: 14.6640380846
+try 2Z char: 00017 win: 88 score: 15.0282719272
+try ZZ char: 00057 win: 287 score: 15.1956266468
+try 2Z char: 00017 win: 89 score: 19.6209462414
+try ZZ char: 00057 win: 288 score: 22.2038295859
+bwd_pass use 4.109
+fwd_infer use 0.101
+[205 153 259  80  84  81  72 204 256 152 287  74 114  86 303 350  88 288
+  89 289]
+count 20
+forward_pass use 1.012
+try JZ char: 00041 win: 205 score: 8.79519235358
+try ?Z char: 00030 win: 153 score: 9.43038524909
+try TZ char: 00051 win: 259 score: 12.5502372418
+try 2Z char: 00017 win: 86 score: 15.4337709828
+try ZZ char: 00057 win: 288 score: 18.017641531
+try 2Z char: 00017 win: 89 score: 20.2499223282
+try ZZ char: 00057 win: 289 score: 23.0810113013
+bwd_pass use 3.880
+fwd_infer use 0.103
+[367 200 452 378 345 377  82 202 454 453 462 292 304 297 291 294  36  37
+  35  39]
+count 20
+forward_pass use 0.960
+try j[ char: 00073 win: 367 score: 9.57479060321
+try I[ char: 00040 win: 200 score: 9.58825341895
+try l[ char: 00075 win: 377 score: 12.194027414
+try 1[ char: 00016 win: 82 score: 13.3688102166
+try ([ char: 00007 win: 37 score: 13.8644763138
+bwd_pass use 3.724
+fwd_infer use 0.111
+[375 295 464 348 204 459 302 300 203 379 349 201 215 290  41 456  44 458
+  43 457]
+count 20
+forward_pass use 1.013
+try l[ char: 00075 win: 375 score: 6.65643162809
+try \[ char: 00059 win: 295 score: 9.05667464459
+try I[ char: 00040 win: 203 score: 10.512501857
+try I[ char: 00040 win: 201 score: 12.7035533687
+try )[ char: 00008 win: 43 score: 13.0255794653
+try |[ char: 00091 win: 457 score: 13.4234921684
+bwd_pass use 3.211
+fwd_infer use 0.097
+[ 82 375 208 291   1 360 452 463 415   3  36 297  39 345 292 202  37  35
+ 377 376]
+count 20
+forward_pass use 0.993
+try 1\ char: 00016 win: 82 score: 3.87808676483
+try J\ char: 00041 win: 208 score: 6.13290968081
+try !\ char: 00000 win: 1 score: 8.90606079712
+try t\ char: 00083 win: 415 score: 10.1859630904
+try I\ char: 00040 win: 202 score: 11.4062585962
+try l\ char: 00075 win: 376 score: 11.7212294234
+bwd_pass use 3.029
+fwd_infer use 0.103
+[203 450 451 298 464 299 379  44  41 460 295  43 290  38 302 461 456 296
+ 457 458]
+count 20
+forward_pass use 1.005
+try I\ char: 00040 win: 203 score: 11.5741020673
+try l\ char: 00075 win: 379 score: 13.5127916684
+try }\ char: 00092 win: 461 score: 13.8447072438
+try |\ char: 00091 win: 456 score: 14.3622767261
+try |\ char: 00091 win: 457 score: 14.9028155661
+try |\ char: 00091 win: 458 score: 15.159779328
+bwd_pass use 3.788
+fwd_infer use 0.100
+[255 296 203 457 295 379 375 298 290 304 291 292 463 456 113 462 460 458
+ 302 461]
+count 20
+forward_pass use 0.993
+try T] char: 00051 win: 255 score: 10.7738362188
+try l] char: 00075 win: 375 score: 13.5338067183
+try \] char: 00059 win: 298 score: 13.652232159
+try }] char: 00092 win: 463 score: 14.2929624076
+try }] char: 00092 win: 460 score: 15.0426197506
+try ]] char: 00060 win: 302 score: 16.3541574446
+bwd_pass use 2.829
+fwd_infer use 0.104
+[255 296 203 457 295 379 375 298 290 304 291 292 463 456 113 462 460 458
+ 302 461]
+count 20
+forward_pass use 0.997
+try T] char: 00051 win: 255 score: 10.8045218226
+try l] char: 00075 win: 375 score: 13.8615698267
+try }] char: 00092 win: 460 score: 15.2411170236
+try ]] char: 00060 win: 302 score: 16.3173141406
+try }] char: 00092 win: 461 score: 16.3521361041
+bwd_pass use 3.426
+fwd_infer use 0.096
+[  9  41  33  83 163  73  70   8 388   7 376  99  97 347  96  77 307 305
+ 306 308]
+count 20
+forward_pass use 0.985
+try "^ char: 00001 win: 9 score: 0.69119934579
+try )^ char: 00008 win: 41 score: 1.20374944418
+try '^ char: 00006 win: 33 score: 3.34669240247
+try /^ char: 00014 win: 73 score: 3.74963362661
+try /^ char: 00014 win: 70 score: 4.22301250344
+try "^ char: 00001 win: 8 score: 4.2904080394
+try "^ char: 00001 win: 7 score: 6.5210286879
+try ^^ char: 00061 win: 307 score: 10.3164166559
+try ^^ char: 00061 win: 305 score: 12.7635755481
+try ^^ char: 00061 win: 306 score: 13.0153976477
+bwd_pass use 2.321
+fwd_infer use 0.114
+[418 394 386 137 385 105   2 121 459 152 120 336 339  77  95  99  78 305
+ 308 306]
+count 20
+forward_pass use 0.998
+try t^ char: 00083 win: 418 score: 0.571761818932
+try o^ char: 00078 win: 394 score: 1.38611755155
+try <^ char: 00027 win: 137 score: 5.69207913845
+try ^^ char: 00061 win: 305 score: 11.6173727466
+bwd_pass use 3.434
+fwd_infer use 0.128
+[134 132  56  57  55  67 127 131 301  66 130  65 293  58 311  69 314 310
+ 312 313]
+count 20
+forward_pass use 0.983
+try ;_ char: 00026 win: 134 score: -6.03034207563
+try ,_ char: 00011 win: 56 score: -3.23342753327
+try :_ char: 00025 win: 127 score: -0.601771554222
+try ._ char: 00013 win: 65 score: -0.0590526773706
+try __ char: 00062 win: 311 score: 1.64371372761
+try __ char: 00062 win: 310 score: 8.04010858204
+try __ char: 00062 win: 312 score: 8.17081541941
+try __ char: 00062 win: 313 score: 8.87399254862
+bwd_pass use 2.456
+fwd_infer use 0.115
+[309  57 127 132  56 130  55  68  67 301 293  58 314  69  65  66 311 313
+ 310 312]
+count 20
+forward_pass use 1.108
+try ^_ char: 00061 win: 309 score: -4.60038842222
+try ,_ char: 00011 win: 57 score: -2.61659240086
+try :_ char: 00025 win: 127 score: -2.21266619694
+try ._ char: 00013 win: 68 score: -0.757119744897
+try [_ char: 00058 win: 293 score: -0.562503070167
+try ._ char: 00013 win: 69 score: 1.0671927302
+try ._ char: 00013 win: 65 score: 1.08025803198
+try __ char: 00062 win: 311 score: 1.79447473179
+try __ char: 00062 win: 313 score: 5.55061215981
+try __ char: 00062 win: 310 score: 8.0297003857
+bwd_pass use 2.263
+fwd_infer use 0.109
+[ 61 318  68   5  58  30 316  33  55  69  66  34  67 309 293 319 301  47
+ 317 315]
+count 20
+forward_pass use 1.448
+try -` char: 00012 win: 61 score: -4.99464201817
+try .` char: 00013 win: 68 score: -4.28980557426
+try "` char: 00001 win: 5 score: -4.04736713115
+try ,` char: 00011 win: 58 score: -3.47306441167
+try '` char: 00006 win: 30 score: -3.44397125528
+try '` char: 00006 win: 33 score: -2.72655303088
+try '` char: 00006 win: 34 score: -2.59545618846
+try ^` char: 00061 win: 309 score: -1.71139843711
+try `` char: 00063 win: 319 score: -1.4597276779
+try ]` char: 00060 win: 301 score: 0.0370867201101
+try `` char: 00063 win: 317 score: 5.38766846815
+bwd_pass use 1.414
+fwd_infer use 0.114
+[ 30  34  68  61 318  58   2 319  66  67 305  69  55   8 293 301   5 309
+ 316   6]
+count 20
+forward_pass use 1.203
+try '` char: 00006 win: 30 score: -4.97099902445
+try '` char: 00006 win: 34 score: -4.31032527271
+try .` char: 00013 win: 68 score: -4.01979621185
+try `` char: 00063 win: 318 score: -3.9827712037
+try ,` char: 00011 win: 58 score: -3.65416075073
+try .` char: 00013 win: 66 score: -3.23769326411
+try ^` char: 00061 win: 305 score: -2.88263013483
+try .` char: 00013 win: 69 score: -2.78689661658
+try ]` char: 00060 win: 301 score: -2.36001143299
+try "` char: 00001 win: 5 score: -0.718082466174
+try ^` char: 00061 win: 309 score: 2.23137145368
+try `` char: 00063 win: 316 score: 4.40586168664
+bwd_pass use 1.688
+fwd_infer use 0.119
+[236 445 340 109 402 397 353 391 384 169 167 449 387 390 404 403 422 323
+ 321 401]
+count 20
+forward_pass use 1.066
+try Pa char: 00047 win: 236 score: -inf
+try za char: 00089 win: 445 score: 7.72371729693
+try za char: 00089 win: 449 score: 10.0023149868
+try na char: 00077 win: 387 score: 10.5029719541
+try ua char: 00084 win: 422 score: 10.8682044007
+try aa char: 00064 win: 323 score: 11.1257224214
+try aa char: 00064 win: 321 score: 13.8138478232
+bwd_pass use 5.423
+fwd_infer use 0.119
+[388  87 171  93 390 328 117 397 102  76  75 402 241 392 342 108  92 107
+ 335 191]
+count 20
+forward_pass use 1.202
+try na char: 00077 win: 388 score: 8.29606966058
+try oa char: 00078 win: 390 score: 9.91003848396
+try 8a char: 00023 win: 117 score: 12.1618671222
+try ea char: 00068 win: 342 score: 13.8207548943
+try 6a char: 00021 win: 107 score: 14.0426925752
+bwd_pass use 6.353
+fwd_infer use 0.129
+[401 108 402  79 234 264 422 239 392 388 389 174 391 178 327 165  75  76
+ 358 326]
+count 20
+forward_pass use 1.176
+try qb char: 00080 win: 401 score: 12.6712103795
+try 6b char: 00021 win: 108 score: 16.6927191103
+try ob char: 00078 win: 392 score: 17.910774567
+try hb char: 00071 win: 358 score: 18.4813723737
+try bb char: 00065 win: 326 score: 25.0525921267
+bwd_pass use 3.949
+fwd_infer use 0.103
+[  3 343 389 236 338 324 453 333 124 253 108 183 102 202 392 106 356  75
+ 359 328]
+count 20
+forward_pass use 1.144
+try !b char: 00000 win: 3 score: 10.3780696421
+try 5b char: 00020 win: 102 score: 11.1544480548
+try ob char: 00078 win: 392 score: 11.2347493141
+try 6b char: 00021 win: 106 score: 11.6484857748
+try hb char: 00071 win: 359 score: 15.2303774137
+try bb char: 00065 win: 328 score: 18.1557987163
+bwd_pass use 3.824
+fwd_infer use 0.113
+[327 408 421 406 344 341 429 409 402 387 167 404 332 390 403 340 401 422
+ 109 391]
+count 20
+forward_pass use 1.030
+try bc char: 00065 win: 327 score: -0.604167693221
+try rc char: 00081 win: 408 score: 5.36116963883
+try ec char: 00068 win: 344 score: 7.51515867488
+try ec char: 00068 win: 341 score: 8.31236093169
+try rc char: 00081 win: 409 score: 8.92900910185
+try cc char: 00066 win: 332 score: 8.95827019664
+bwd_pass use 6.585
+fwd_infer use 0.097
+[170 166 394 217 424 260 246 235 263 232 407 172 334 405 211 193 179 332
+ 350 230]
+count 20
+forward_pass use 1.009
+try Cc char: 00034 win: 170 score: 6.49907793999
+try oc char: 00078 win: 394 score: 9.02923312439
+try Cc char: 00034 win: 172 score: 10.0293001902
+try cc char: 00066 win: 334 score: 14.6857748836
+try cc char: 00066 win: 332 score: 14.7495894168
+bwd_pass use 6.261
+fwd_infer use 0.105
+[204 389 402 390 101 340 391 392 441 303 236  42 404 167 422 403 397 169
+ 335 401]
+count 20
+forward_pass use 1.007
+try Id char: 00040 win: 204 score: 10.7322982737
+try od char: 00078 win: 390 score: 11.1149321217
+try od char: 00078 win: 391 score: 11.6566092556
+try od char: 00078 win: 392 score: 13.4538468781
+try qd char: 00080 win: 404 score: 14.6678545137
+try ud char: 00084 win: 422 score: 16.0047868031
+try dd char: 00067 win: 335 score: 17.2088551957
+bwd_pass use 5.908
+fwd_infer use 0.099
+[243 422 337 194 392 179 391 401 327 122 388 165 174 234 178  75  79  76
+ 176 335]
+count 20
+forward_pass use 1.013
+try Qd char: 00048 win: 243 score: 11.7964089561
+try ud char: 00084 win: 422 score: 15.0238300791
+try dd char: 00067 win: 337 score: 20.8373831165
+try dd char: 00067 win: 335 score: 22.9412038504
+bwd_pass use 4.243
+fwd_infer use 0.098
+[377   4 333  49 200 392 359 467 140 236 320 185 344 324 378 427 343 342
+ 389 338]
+count 20
+forward_pass use 1.045
+try le char: 00075 win: 377 score: 0.924956412965
+try ce char: 00066 win: 333 score: 1.39207013892
+try ~e char: 00093 win: 467 score: 4.75973860847
+try ee char: 00068 win: 344 score: 4.91609561123
+bwd_pass use 3.979
+fwd_infer use 0.098
+[180 236 340 414 397 239 184 341 344  76 356 185 353 390 389 392  90 333
+ 342 343]
+count 20
+forward_pass use 1.060
+try Ee char: 00036 win: 180 score: 7.01290259757
+try Pe char: 00047 win: 236 score: 7.40991716615
+try ee char: 00068 win: 340 score: 10.4617452777
+try ee char: 00068 win: 341 score: 14.8997429339
+bwd_pass use 5.670
+fwd_infer use 0.102
+[189 418 113 363 362 290 292 112 300 257 203 452 379 464 377 349 457 201
+ 376 347]
+count 20
+forward_pass use 1.002
+try Ff char: 00037 win: 189 score: 1.55970138636
+try tf char: 00083 win: 418 score: 6.36951764863
+try lf char: 00075 win: 379 score: 6.67929520831
+try ff char: 00069 win: 349 score: 8.56277981276
+try lf char: 00075 win: 376 score: 11.6514621417
+try ff char: 00069 win: 347 score: 15.8334284226
+bwd_pass use 5.105
+fwd_infer use 0.096
+[237 208  36 108 202 200 297 294 416 376  39 377  35 291 257 292  37 345
+ 452 347]
+count 20
+forward_pass use 0.995
+try Pf char: 00047 win: 237 score: 6.49663123591
+try If char: 00040 win: 202 score: 10.0839143935
+try lf char: 00075 win: 376 score: 11.0379241859
+try ff char: 00069 win: 345 score: 16.7357021967
+bwd_pass use 2.898
+fwd_infer use 0.101
+[427 252 444 323 392 185 328 324 342 437 436 124  75  90 333 353 236 343
+ 101 351]
+count 20
+forward_pass use 1.009
+try vg char: 00085 win: 427 score: 6.78404765587
+try Sg char: 00050 win: 252 score: 8.67736288314
+try Fg char: 00037 win: 185 score: 8.7889122788
+try ag char: 00064 win: 324 score: 9.11960603603
+try xg char: 00087 win: 436 score: 11.4679761025
+try eg char: 00068 win: 343 score: 11.7931413783
+try 5g char: 00020 win: 101 score: 13.023771616
+try gg char: 00070 win: 351 score: 21.4102885892
+bwd_pass use 6.744
+fwd_infer use 0.102
+[176 454 171 239 246  79 115 185 278 168 238  76  77 340 249 243 234 165
+ 167 352]
+count 20
+forward_pass use 1.022
+try Dg char: 00035 win: 176 score: 11.7679898649
+try Pg char: 00047 win: 239 score: 13.4111698108
+try 8g char: 00023 win: 115 score: 16.0229446451
+try Bg char: 00033 win: 165 score: 21.3494533589
+try gg char: 00070 win: 352 score: 27.3020816095
+bwd_pass use 4.687
+fwd_infer use 0.101
+[215 454  39  82 370 389 356 107 462 404 403 359 294 397 422 236 401 169
+ 325 327]
+count 20
+forward_pass use 1.014
+try Lh char: 00043 win: 215 score: 8.85081699981
+try 1h char: 00016 win: 82 score: 11.0472502388
+try hh char: 00071 win: 356 score: 11.8752739542
+try qh char: 00080 win: 404 score: 13.0231165819
+try hh char: 00071 win: 359 score: 14.0413163511
+try bh char: 00065 win: 325 score: 19.2347691422
+bwd_pass use 3.465
+fwd_infer use 0.100
+[386 458 394 456 260 357 329 391 400 398 238 401 210 197 196 395 199 179
+ 230 355]
+count 20
+forward_pass use 1.053
+try nh char: 00077 win: 386 score: 12.170965835
+try ph char: 00079 win: 398 score: 13.3027083491
+try Kh char: 00042 win: 210 score: 16.799716096
+try hh char: 00071 win: 355 score: 22.0772765796
+bwd_pass use 8.227
+fwd_infer use 0.101
+[459 363 299 376 349 215 362 452 298 203 290 379 365 364 201 457  82 375
+  44  43]
+count 20
+forward_pass use 1.039
+try |i char: 00091 win: 459 score: 9.94631371157
+try ii char: 00072 win: 363 score: 12.0155463413
+try ii char: 00072 win: 362 score: 12.1292508326
+bwd_pass use 2.269
+fwd_infer use 0.099
+[292 418 291  38 460 456 458 451 419 203 450 219  82 299 367 364 298 375
+ 368 302]
+count 20
+forward_pass use 1.034
+try [i char: 00058 win: 292 score: 2.15895340506
+try ti char: 00083 win: 418 score: 4.83743887545
+try ti char: 00083 win: 419 score: 5.52346942864
+try Ii char: 00040 win: 203 score: 6.7011303386
+try {i char: 00090 win: 450 score: 7.40537278179
+try \i char: 00059 win: 299 score: 8.47175469076
+try ii char: 00072 win: 364 score: 11.2985535617
+bwd_pass use 2.324
+fwd_infer use 0.100
+[403 203 405 459 407  43 458 256 348 387 219  72  41 207 456 204 451  74
+  42 303]
+count 20
+forward_pass use 1.007
+try qj char: 00080 win: 403 score: 2.19064416003
+try Ij char: 00040 win: 203 score: 4.15876949115
+try rj char: 00081 win: 405 score: 4.94234037508
+try |j char: 00091 win: 459 score: 5.66038439774
+try )j char: 00008 win: 43 score: 6.03182910144
+try Jj char: 00041 win: 207 score: 7.90791059959
+try Ij char: 00040 win: 204 score: 7.98441093162
+try )j char: 00008 win: 42 score: 8.47801951831
+bwd_pass use 2.781
+fwd_infer use 0.096
+[362 377 324 415 406 408  37 292 294 208 454   4 200  39 361 367  82 378
+ 462 369]
+count 20
+forward_pass use 0.996
+try ij char: 00072 win: 362 score: 3.33741421162
+try tj char: 00083 win: 415 score: 4.009740799
+try rj char: 00081 win: 406 score: 5.88268037361
+try [j char: 00058 win: 292 score: 6.7914212643
+try Jj char: 00041 win: 208 score: 7.02420417671
+try !j char: 00000 win: 4 score: 7.51042369976
+try ij char: 00072 win: 361 score: 11.9375349992
+try jj char: 00073 win: 369 score: 12.0648825261
+bwd_pass use 3.187
+fwd_infer use 0.096
+[458 451 218  38 426 203 303  42 280 216 245 424 162 211 461 277 355 275
+ 247 373]
+count 20
+forward_pass use 1.034
+try |k char: 00091 win: 458 score: 3.56303058857
+try {k char: 00090 win: 451 score: 6.28178310852
+try vk char: 00085 win: 426 score: 7.89678499799
+try Ik char: 00040 win: 203 score: 9.31057058795
+try Ak char: 00032 win: 162 score: 11.146052953
+try kk char: 00074 win: 373 score: 15.4968246512
+bwd_pass use 3.949
+fwd_infer use 0.099
+[ 44  77 186 160 296 282 247 458 168 275 248 277 280 249 276 214 281 373
+ 211 210]
+count 20
+forward_pass use 1.011
+try )k char: 00008 win: 44 score: 7.42757672725
+try Fk char: 00037 win: 186 score: 9.27708649281
+try Yk char: 00056 win: 282 score: 11.0618029709
+try Xk char: 00055 win: 275 score: 12.42850789
+try Yk char: 00056 win: 280 score: 15.2157630781
+try Rk char: 00049 win: 249 score: 16.2449403242
+try Xk char: 00055 win: 276 score: 16.8031333453
+try kk char: 00074 win: 373 score: 20.2295551378
+bwd_pass use 4.927
+fwd_infer use 0.100
+[450 348 302 216 205 346 451  72 296  41 459 203 295 303 379 204 458  42
+  38 461]
+count 20
+forward_pass use 1.004
+try {l char: 00090 win: 450 score: 6.12492244472
+try Ll char: 00043 win: 216 score: 6.64846857392
+try Jl char: 00041 win: 205 score: 7.49833641231
+try fl char: 00069 win: 346 score: 9.02097757085
+try |l char: 00091 win: 459 score: 11.2705660666
+try Il char: 00040 win: 203 score: 11.9190496364
+try ll char: 00075 win: 379 score: 11.9897659617
+try Il char: 00040 win: 204 score: 12.0740787708
+bwd_pass use 3.558
+fwd_infer use 0.102
+[364 216 460 372  38 360 302 375 113 218 203 346 299 461 290  44 295 379
+ 458 296]
+count 20
+forward_pass use 1.020
+try il char: 00072 win: 364 score: 6.46503008873
+try kl char: 00074 win: 372 score: 7.36539825326
+try il char: 00072 win: 360 score: 9.57721246957
+try \l char: 00059 win: 299 score: 11.0270524503
+try \l char: 00059 win: 295 score: 11.6151785572
+try ll char: 00075 win: 379 score: 11.917574068
+try \l char: 00059 win: 296 score: 12.218350695
+bwd_pass use 3.183
+fwd_infer use 0.099
+[340 327 378 404 430 431 403 444 169 422 402 387 392 236 401 167 356 397
+ 389 384]
+count 20
+forward_pass use 1.024
+try em char: 00068 win: 340 score: 6.73023866689
+try bm char: 00065 win: 327 score: 8.35328167892
+try qm char: 00080 win: 403 score: 10.3703407707
+try nm char: 00077 win: 387 score: 12.4681960508
+try om char: 00078 win: 392 score: 12.7552160294
+try pm char: 00079 win: 397 score: 13.3088661394
+try nm char: 00077 win: 389 score: 15.4190928637
+try mm char: 00076 win: 384 score: 19.4637918006
+bwd_pass use 5.273
+fwd_infer use 0.107
+[236 392 422 404 327 356 230 167 355 398 401 158 384 389 395 169 403 402
+ 397 155]
+count 20
+forward_pass use 1.051
+try Pm char: 00047 win: 236 score: 10.9375159502
+try om char: 00078 win: 392 score: 11.9122100527
+try um char: 00084 win: 422 score: 12.261096672
+try hm char: 00071 win: 356 score: 13.1436621599
+try hm char: 00071 win: 355 score: 13.9953417469
+try pm char: 00079 win: 398 score: 14.6350367386
+try qm char: 00080 win: 403 score: 15.1512668996
+bwd_pass use 8.873
+fwd_infer use 0.124
+[400 109 378 390 335 236 392 422 238 228 391 169 167 389 384 402 356 401
+ 327 397]
+count 20
+forward_pass use 1.055
+try qn char: 00080 win: 400 score: 9.29068578708
+try 6n char: 00021 win: 109 score: 10.8095464508
+try on char: 00078 win: 390 score: 12.2227897788
+try dn char: 00067 win: 335 score: 12.9970954616
+try Pn char: 00047 win: 236 score: 13.0102988942
+try on char: 00078 win: 392 score: 16.5719115278
+try hn char: 00071 win: 356 score: 17.6166574072
+try pn char: 00079 win: 397 score: 19.0922273062
+bwd_pass use 5.854
+fwd_infer use 0.098
+[396 224 336 115 227 226 263 166 424 118 394 399 386 177 385 175 398 355
+ 230 395]
+count 20
+forward_pass use 1.007
+try pn char: 00079 win: 396 score: 9.77734879989
+try un char: 00084 win: 424 score: 10.5548484839
+try on char: 00078 win: 394 score: 10.6826913008
+try pn char: 00079 win: 399 score: 11.2488589745
+try nn char: 00077 win: 386 score: 17.3232079574
+bwd_pass use 4.527
+fwd_infer use 0.098
+[166 177 175 421 156 398 190 224 355 115 423 118 260 263 396 395 394 179
+ 393 230]
+count 20
+forward_pass use 1.015
+try Bo char: 00033 win: 166 score: 9.66994141892
+try Do char: 00035 win: 177 score: 9.78175401991
+try Do char: 00035 win: 175 score: 9.83301294805
+try uo char: 00084 win: 421 score: 12.2254130922
+try po char: 00079 win: 398 score: 12.6465980579
+try uo char: 00084 win: 423 score: 15.7223139502
+try oo char: 00078 win: 394 score: 19.6498044978
+try oo char: 00078 win: 393 score: 19.7640534552
+try Oo char: 00046 win: 230 score: 19.9909783869
+bwd_pass use 5.445
+fwd_infer use 0.099
+[333 342 338 253 108 239 402 180 122 397 328 124 389 335 241 388 191 392
+  76  75]
+count 20
+forward_pass use 1.029
+try co char: 00066 win: 333 score: 15.0802550331
+try oo char: 00078 win: 392 score: 20.0077005463
+try 0o char: 00015 win: 76 score: 20.2106511017
+bwd_pass use 7.028
+fwd_infer use 0.101
+[417 378 335 421 403 340 396 390 384 179 169 404 391 400 422 327 167 401
+ 402 397]
+count 20
+forward_pass use 1.020
+try tp char: 00083 win: 417 score: 5.95283820753
+try lp char: 00075 win: 378 score: 8.51507893993
+try dp char: 00067 win: 335 score: 10.5997243129
+try up char: 00084 win: 421 score: 10.7085075284
+try qp char: 00080 win: 403 score: 12.0185794169
+try pp char: 00079 win: 396 score: 12.0826851835
+try op char: 00078 win: 390 score: 17.4219298284
+try op char: 00078 win: 391 score: 17.8202937465
+try pp char: 00079 win: 397 score: 21.4948174853
+bwd_pass use 6.134
+fwd_infer use 0.099
+[423 199 105 420 227 226 398 424 173 170 121 235 263 394 260 261  78 395
+ 262 231]
+count 20
+forward_pass use 1.027
+try up char: 00084 win: 423 score: 11.7321018092
+try 6p char: 00021 win: 105 score: 12.3304223767
+try up char: 00084 win: 420 score: 14.5736146452
+try pp char: 00079 win: 398 score: 16.8931545825
+try Pp char: 00047 win: 235 score: 17.0878886023
+try op char: 00078 win: 394 score: 18.4300572514
+try pp char: 00079 win: 395 score: 23.3229341236
+bwd_pass use 5.283
+fwd_infer use 0.100
+[333 428 388 178 404 174 384 327 422 238  76 165 389 335 392 397 391 402
+ 401 400]
+count 20
+forward_pass use 1.045
+try cq char: 00066 win: 333 score: 11.8121532683
+try vq char: 00085 win: 428 score: 11.8661372764
+try uq char: 00084 win: 422 score: 12.8619175796
+try Bq char: 00033 win: 165 score: 14.4487133925
+try dq char: 00067 win: 335 score: 17.5180081538
+try oq char: 00078 win: 392 score: 18.6214237704
+try oq char: 00078 win: 391 score: 19.4193138675
+try qq char: 00080 win: 402 score: 24.3539633114
+try qq char: 00080 win: 401 score: 24.4419172531
+try qq char: 00080 win: 400 score: 26.2779793358
+bwd_pass use 6.429
+fwd_infer use 0.102
+[450 451 342 302 328 236 333 101 428 340 397 390 422 335  75 389  76 392
+ 404 402]
+count 20
+forward_pass use 1.014
+try {q char: 00090 win: 450 score: 7.90634166444
+try {q char: 00090 win: 451 score: 10.0101565886
+try cq char: 00066 win: 333 score: 10.2934084106
+try 5q char: 00020 win: 101 score: 11.4770099127
+try oq char: 00078 win: 390 score: 13.3146259388
+try oq char: 00078 win: 392 score: 14.5627582732
+try qq char: 00080 win: 404 score: 17.1818885025
+try qq char: 00080 win: 402 score: 18.2435877377
+bwd_pass use 4.881
+fwd_infer use 0.103
+[426 201 439 349   7 298 459 280 364 299 418 405 203 206 255 215 207 375
+ 281  82]
+count 20
+forward_pass use 1.024
+try vr char: 00085 win: 426 score: 5.10564700259
+try "r char: 00001 win: 7 score: 5.5436762771
+try ir char: 00072 win: 364 score: 7.39694126379
+try tr char: 00083 win: 418 score: 9.09573220358
+bwd_pass use 2.316
+fwd_infer use 0.098
+[455  64  62  63  66  67  55 403 462  59  69 446  57 236  56 369  40 378
+ 361 444]
+count 20
+forward_pass use 1.001
+try |r char: 00091 win: 455 score: -1.67235597728
+try -r char: 00012 win: 64 score: 1.56021196896
+try .r char: 00013 win: 67 score: 2.01237688298
+try .r char: 00013 win: 69 score: 2.36276858243
+try ,r char: 00011 win: 57 score: 3.97641100001
+try yr char: 00088 win: 444 score: 5.39248882075
+bwd_pass use 2.372
+fwd_infer use 0.096
+[ 87 356  93 146 333 138 148 124 122 136 140  75 342  90 180 184 414 252
+ 102 253]
+count 20
+forward_pass use 1.005
+try 2s char: 00017 win: 87 score: 6.78342582858
+try 3s char: 00018 win: 93 score: 7.50035474278
+try cs char: 00066 win: 333 score: 7.76015307065
+try >s char: 00029 win: 148 score: 8.91276403027
+try 9s char: 00024 win: 122 score: 9.47428270741
+try ss char: 00082 win: 414 score: 15.3694591512
+try 5s char: 00020 win: 102 score: 16.7782858131
+bwd_pass use 3.295
+fwd_infer use 0.103
+[ 61 344  64  49 136 406 408 414 467 146 324  63 435 413 236 437 390 438
+ 252 145]
+count 20
+forward_pass use 1.036
+try -s char: 00012 win: 61 score: 3.85786670198
+try -s char: 00012 win: 64 score: 5.94848629691
+try ss char: 00082 win: 413 score: 8.28479679854
+bwd_pass use 1.977
+fwd_infer use 0.106
+[425 259  81 205 441 162  38  12  83 407 256  41   0  84 303  42 204 451
+ 459  72]
+count 20
+forward_pass use 1.009
+try vt char: 00085 win: 425 score: 1.48595373813
+try rt char: 00081 win: 407 score: 5.50058206248
+try !t char: 00000 win: 0 score: 8.1244328272
+bwd_pass use 5.390
+fwd_infer use 0.103
+[425 259  81 205 441 162  38  12  83 407 256  41   0  84 303  42 204 451
+ 459  72]
+count 20
+forward_pass use 0.999
+try vt char: 00085 win: 425 score: 2.74856064959
+try rt char: 00081 win: 407 score: 4.71626772673
+try !t char: 00000 win: 0 score: 7.9491963291
+bwd_pass use 4.293
+fwd_infer use 0.103
+[236 207 390 124 206 338 200 298 299  82 328 335 268 392 375 444  76 356
+ 389  75]
+count 20
+forward_pass use 1.040
+try Pu char: 00047 win: 236 score: -inf
+try Ju char: 00041 win: 207 score: 7.93589645692
+try ou char: 00078 win: 390 score: 9.38588440471
+try Ju char: 00041 win: 206 score: 9.73262403744
+try bu char: 00065 win: 328 score: 10.4700036654
+try du char: 00067 win: 335 score: 10.5415506587
+try ou char: 00078 win: 392 score: 11.4311156921
+try nu char: 00077 win: 389 score: 12.3406847341
+bwd_pass use 4.336
+fwd_infer use 0.101
+[ 28 277 358 298 434 428 264 179 391 400  79 176 440 387 401 399 421 386
+ 385 422]
+count 20
+forward_pass use 1.051
+try &u char: 00005 win: 28 score: 5.38865419081
+try Xu char: 00055 win: 277 score: 8.11319172972
+try hu char: 00071 win: 358 score: 8.24306349803
+try wu char: 00086 win: 434 score: 10.0239758744
+try vu char: 00085 win: 428 score: 10.0503747121
+try ou char: 00078 win: 391 score: 11.2833722135
+try nu char: 00077 win: 387 score: 13.656010659
+try uu char: 00084 win: 421 score: 14.837340887
+try uu char: 00084 win: 422 score: 16.9285736785
+bwd_pass use 6.092
+fwd_infer use 0.098
+[332 424 433 394 429 420 232 261  42 434 120 179 400 442 303 209 440 423
+ 260 441]
+count 20
+forward_pass use 1.018
+try cv char: 00066 win: 332 score: 5.60741871838
+try uv char: 00084 win: 424 score: 5.71326209459
+try wv char: 00086 win: 433 score: 7.25457596457
+try Jv char: 00041 win: 209 score: 9.0391569556
+try uv char: 00084 win: 423 score: 12.9762046387
+bwd_pass use 4.752
+fwd_infer use 0.098
+[421 260 334 120 209 433 299 337 298 387 332 426 398 442 434 424 423 429
+ 440 441]
+count 20
+forward_pass use 1.025
+try uv char: 00084 win: 421 score: 5.3955566736
+try cv char: 00066 win: 334 score: 5.7653667277
+try wv char: 00086 win: 433 score: 7.50189694848
+try wv char: 00086 win: 434 score: 9.70735421883
+bwd_pass use 2.892
+fwd_infer use 0.099
+[400 423 426 380 442 260 421  20 179 262 382 355 199 227 383 226 424 263
+ 271 272]
+count 20
+forward_pass use 1.013
+try qw char: 00080 win: 400 score: 9.14962517703
+try uw char: 00084 win: 423 score: 11.1399115224
+try vw char: 00085 win: 426 score: 13.735613929
+try Ww char: 00054 win: 271 score: 14.9012109586
+try Ww char: 00054 win: 272 score: 17.6366510207
+bwd_pass use 7.008
+fwd_infer use 0.100
+[409 331 325 263 401 384 321 369 378 397 236 224 219 169 404  40 393 422
+ 403 444]
+count 20
+forward_pass use 1.011
+try rw char: 00081 win: 409 score: 3.40673419467
+try cw char: 00066 win: 331 score: 4.71600108824
+try aw char: 00064 win: 321 score: 4.74516918723
+try Lw char: 00043 win: 219 score: 4.83150112836
+try Bw char: 00033 win: 169 score: 5.03110986145
+try qw char: 00080 win: 404 score: 5.23930167195
+try )w char: 00008 win: 40 score: 7.50028701092
+try yw char: 00088 win: 444 score: 10.0098263117
+bwd_pass use 5.448
+fwd_infer use 0.114
+[ 38 442 440 160 450 165 248 370 299 211 302 373 298 281 426 280 246 439
+ 277 276]
+count 20
+forward_pass use 1.045
+try (x char: 00007 win: 38 score: 4.50620388568
+try yx char: 00088 win: 440 score: 5.90635715695
+try Ax char: 00032 win: 160 score: 6.32046367018
+try Rx char: 00049 win: 248 score: 7.86159578328
+try kx char: 00074 win: 370 score: 8.34248758026
+try vx char: 00085 win: 426 score: 8.63970709402
+try Yx char: 00056 win: 280 score: 9.85371081557
+try Rx char: 00049 win: 246 score: 10.5392212248
+try xx char: 00087 win: 439 score: 18.4333600569
+try Xx char: 00055 win: 276 score: 18.5378440667
+bwd_pass use 4.384
+fwd_infer use 0.101
+[444 134 462 367  35 443 361 368 200 438 369  36 406 408 437 298  40 417
+ 436 435]
+count 20
+forward_pass use 1.009
+try yx char: 00088 win: 444 score: 2.07690488688
+try ;x char: 00026 win: 134 score: 2.36602918547
+try ix char: 00072 win: 361 score: 3.50882004557
+try xx char: 00087 win: 438 score: 4.59450232942
+try rx char: 00081 win: 406 score: 7.00682688328
+try xx char: 00087 win: 436 score: 8.43766808102
+try xx char: 00087 win: 435 score: 8.83259691699
+bwd_pass use 2.487
+fwd_infer use 0.102
+[ 72  74 205 120 204 229 264 276 303 277 261 424 228 423 426 260 265 442
+ 440 441]
+count 20
+forward_pass use 1.030
+try /y char: 00014 win: 72 score: 5.45636723479
+try 9y char: 00024 win: 120 score: 9.47847682026
+try Iy char: 00040 win: 204 score: 9.91671232972
+try Xy char: 00055 win: 277 score: 11.8609928631
+try yy char: 00088 win: 442 score: 22.4457853111
+try yy char: 00088 win: 440 score: 22.449766507
+bwd_pass use 4.859
+fwd_infer use 0.103
+[ 71 356  40 456 236 378 427 206 269 266 455  76  75 239 124 443 462 428
+ 444 268]
+count 20
+forward_pass use 1.014
+try /y char: 00014 win: 71 score: 9.06404778897
+try )y char: 00008 win: 40 score: 10.2493310164
+try vy char: 00085 win: 427 score: 12.0890221727
+try yy char: 00088 win: 443 score: 12.2609287057
+bwd_pass use 4.493
+fwd_infer use 0.102
+[ 61  63  64  57  58 390 327 314 466 409 404 364 146 169 443 313 419 403
+ 321 449]
+count 20
+forward_pass use 1.003
+try -z char: 00012 win: 61 score: 2.23484001268
+try -z char: 00012 win: 63 score: 2.73878922751
+try -z char: 00012 win: 64 score: 4.01338633221
+try rz char: 00081 win: 409 score: 4.94255124128
+try Bz char: 00033 win: 169 score: 5.65392262938
+try yz char: 00088 win: 443 score: 7.14187664143
+try tz char: 00083 win: 419 score: 7.81969220893
+try az char: 00064 win: 321 score: 9.80990654216
+try zz char: 00089 win: 449 score: 12.6959863622
+bwd_pass use 2.609
+fwd_infer use 0.101
+[206  71 324 417  82 436 148 285 435 390 236 353 437 215 323 438 145 150
+ 446 449]
+count 20
+forward_pass use 1.012
+try Jz char: 00041 win: 206 score: -0.799370559993
+try /z char: 00014 win: 71 score: -0.176981252929
+try az char: 00064 win: 324 score: 7.64092382935
+try xz char: 00087 win: 438 score: 8.11484674941
+try >z char: 00029 win: 145 score: 8.48864144988
+try zz char: 00089 win: 446 score: 12.6441931552
+bwd_pass use 5.897
+fwd_infer use 0.102
+[369 417 345   3 298 200 297 302 375 462 463 304 292 202  39  36  37 454
+  35 291]
+count 20
+forward_pass use 1.033
+try j{ char: 00073 win: 369 score: -inf
+try t{ char: 00083 win: 417 score: 9.10194727669
+try \{ char: 00059 win: 298 score: 10.7200616296
+try ({ char: 00007 win: 39 score: 13.1558254104
+try ({ char: 00007 win: 36 score: 15.5566585356
+try ({ char: 00007 win: 35 score: 15.7501594176
+try [{ char: 00058 win: 291 score: 16.6030658424
+bwd_pass use 5.897
+fwd_infer use 0.103
+[131 304  37 367 427 417 294 361 292 462 369 455 134  36  39  40 324 200
+   4 378]
+count 20
+forward_pass use 0.992
+try ;{ char: 00026 win: 131 score: 5.26639869616
+try i{ char: 00072 win: 361 score: 6.01310325596
+try ;{ char: 00026 win: 134 score: 7.41073454812
+bwd_pass use 5.425
+fwd_infer use 0.101
+[365 349  82 300  39 464 201 292 203 376 375 460  71 377 452 454 456  44
+  43 457]
+count 20
+forward_pass use 1.004
+try j| char: 00073 win: 365 score: 10.5533699795
+try 1| char: 00016 win: 82 score: 12.6315958879
+try l| char: 00075 win: 377 score: 15.3383609278
+bwd_pass use 2.912
+fwd_infer use 0.101
+[ 83 303 379   0 373  80  43 284 204  42  84 216  81 205  74  41  38 459
+  72 203]
+count 20
+forward_pass use 1.033
+try 1| char: 00016 win: 83 score: 2.89050818459
+try ]| char: 00060 win: 303 score: 3.22220099342
+try l| char: 00075 win: 379 score: 5.48725863733
+try Y| char: 00056 win: 284 score: 5.94242103073
+try )| char: 00008 win: 42 score: 6.52814565291
+try /| char: 00014 win: 74 score: 6.77842854497
+try (| char: 00007 win: 38 score: 6.88451287352
+try || char: 00091 win: 459 score: 11.2163347653
+try I| char: 00040 win: 203 score: 11.2821726476
+bwd_pass use 3.626
+fwd_infer use 0.101
+[ 83 405 450 290  44  72 203 204 379 373 459 295 451  38 303  42 296  41
+ 458 461]
+count 20
+forward_pass use 0.996
+try 1} char: 00016 win: 83 score: 4.00784638669
+try r} char: 00081 win: 405 score: 7.63905052067
+try I} char: 00040 win: 203 score: 7.72728538296
+try I} char: 00040 win: 204 score: 9.2202633774
+try {} char: 00090 win: 451 score: 10.3780746209
+try )} char: 00008 win: 42 score: 14.6201929542
+try )} char: 00008 win: 41 score: 16.0960400278
+try }} char: 00092 win: 461 score: 18.8804933529
+bwd_pass use 6.092
+fwd_infer use 0.102
+[  0 290 450  83 457  38 302 379 295 459  43 203 204 451 303  41 458 456
+ 460 461]
+count 20
+forward_pass use 1.043
+try !} char: 00000 win: 0 score: 7.08426705861
+try |} char: 00091 win: 459 score: 7.67463490249
+try )} char: 00008 win: 43 score: 8.70963897754
+try I} char: 00040 win: 203 score: 9.88888103143
+try I} char: 00040 win: 204 score: 10.6988981618
+try {} char: 00090 win: 451 score: 10.8839188886
+try }} char: 00092 win: 460 score: 11.1130910474
+try }} char: 00092 win: 461 score: 13.4354399557
+bwd_pass use 2.612
+fwd_infer use 0.105
+[ 67  69 126 127 411 129 293 467 128 301  50 468   7 147  51  53 142 137
+ 469 465]
+count 20
+forward_pass use 1.025
+try .~ char: 00013 win: 67 score: -3.27533822564
+try .~ char: 00013 win: 69 score: -2.96818614809
+try :~ char: 00025 win: 126 score: -1.8326588976
+try :~ char: 00025 win: 129 score: -1.73530814017
+try :~ char: 00025 win: 128 score: -1.28466977568
+try +~ char: 00010 win: 50 score: -0.464911695691
+try ~~ char: 00093 win: 468 score: -0.410614754592
+try "~ char: 00001 win: 7 score: 0.669545881786
+try +~ char: 00010 win: 53 score: 1.26166575234
+try =~ char: 00028 win: 142 score: 1.3253095927
+try <~ char: 00027 win: 137 score: 5.21760632652
+try ~~ char: 00093 win: 469 score: 6.33909304525
+try ~~ char: 00093 win: 465 score: 8.32831609278
+bwd_pass use 2.527
+fwd_infer use 0.102
+[ 32 127 126 301 469 143 318 141 413 145 136  61  49  63  62 140  60  64
+ 467 466]
+count 20
+forward_pass use 0.980
+try '~ char: 00006 win: 32 score: -0.441906791899
+try `~ char: 00063 win: 318 score: -0.225357231319
+try >~ char: 00029 win: 145 score: 1.28258631987
+try <~ char: 00027 win: 136 score: 1.407368823
+try -~ char: 00012 win: 61 score: 2.96186532567
+try -~ char: 00012 win: 63 score: 3.33673903101
+try -~ char: 00012 win: 60 score: 3.6437401617
+try -~ char: 00012 win: 64 score: 4.50926074788
+try ~~ char: 00093 win: 467 score: 5.50319550401
+try ~~ char: 00093 win: 466 score: 5.80049936209
+bwd_pass use 1.936
+(0, 0, 50, 10, 0)
+(0, 4, 50, 10, 0)
+(1, 33, 50, 10, 6)
+(1, 34, 50, 10, 6)
+(2, 12, 50, 10, 2)
+(2, 10, 50, 10, 2)
+(3, 251, 50, 10, 50)
+(3, 251, 50, 10, 50)
+(4, 376, 50, 10, 75)
+(4, 22, 50, 10, 4)
+(5, 28, 50, 10, 5)
+(5, 28, 50, 10, 5)
+(6, 31, 50, 10, 6)
+(6, 34, 50, 10, 6)
+(7, 39, 50, 10, 7)
+(7, 451, 50, 10, 90)
+(8, 44, 50, 10, 8)
+(8, 375, 50, 10, 75)
+(9, 47, 50, 10, 9)
+(9, 47, 50, 10, 9)
+(10, 52, 50, 10, 10)
+(10, 49, 50, 10, 9)
+(11, 65, 50, 10, 13)
+(11, 57, 50, 10, 11)
+(12, 60, 50, 10, 12)
+(12, 60, 50, 10, 12)
+(13, 55, 50, 10, 11)
+(13, 68, 50, 10, 13)
+(14, 73, 50, 10, 14)
+(14, 456, 50, 10, 91)
+(15, 234, 50, 10, 46)
+(15, 394, 50, 10, 78)
+(16, 84, 50, 10, 16)
+(16, 464, 50, 10, 92)
+(17, 87, 50, 10, 17)
+(17, 85, 50, 10, 17)
+(18, 93, 50, 10, 18)
+(18, 93, 50, 10, 18)
+(19, 95, 50, 10, 19)
+(19, 99, 50, 10, 19)
+(20, 103, 50, 10, 20)
+(20, 253, 50, 10, 50)
+(21, 356, 50, 10, 71)
+(21, 105, 50, 10, 21)
+(22, 113, 50, 10, 22)
+(22, 153, 50, 10, 30)
+(23, 165, 50, 10, 33)
+(23, 116, 50, 10, 23)
+(24, 120, 50, 10, 24)
+(24, 124, 50, 10, 24)
+(25, 129, 50, 10, 25)
+(25, 127, 50, 10, 25)
+(26, 126, 50, 10, 25)
+(26, 129, 50, 10, 25)
+(27, 137, 50, 10, 27)
+(27, 135, 50, 10, 27)
+(28, 143, 50, 10, 28)
+(28, 142, 50, 10, 28)
+(29, 146, 50, 10, 29)
+(29, 145, 50, 10, 29)
+(30, 153, 50, 10, 30)
+(30, 152, 50, 10, 30)
+(31, 157, 50, 10, 31)
+(31, 157, 50, 10, 31)
+(32, 161, 50, 10, 32)
+(32, 162, 50, 10, 32)
+(33, 166, 50, 10, 33)
+(33, 165, 50, 10, 33)
+(34, 405, 50, 10, 81)
+(34, 174, 50, 10, 34)
+(35, 232, 50, 10, 46)
+(35, 231, 50, 10, 46)
+(36, 181, 50, 10, 36)
+(36, 106, 50, 10, 21)
+(37, 185, 50, 10, 37)
+(37, 186, 50, 10, 37)
+(38, 191, 50, 10, 38)
+(38, 170, 50, 10, 34)
+(39, 196, 50, 10, 39)
+(39, 263, 50, 10, 52)
+(40, 204, 50, 10, 40)
+(40, 376, 50, 10, 75)
+(41, 207, 50, 10, 41)
+(41, 205, 50, 10, 41)
+(42, 210, 50, 10, 42)
+(42, 212, 50, 10, 42)
+(43, 202, 50, 10, 40)
+(43, 299, 50, 10, 59)
+(44, 228, 50, 10, 45)
+(44, 424, 50, 10, 84)
+(45, 226, 50, 10, 45)
+(45, 227, 50, 10, 45)
+(46, 232, 50, 10, 46)
+(46, 232, 50, 10, 46)
+(47, 239, 50, 10, 47)
+(47, 237, 50, 10, 47)
+(48, 231, 50, 10, 46)
+(48, 230, 50, 10, 46)
+(49, 248, 50, 10, 49)
+(49, 239, 50, 10, 47)
+(50, 252, 50, 10, 50)
+(50, 414, 50, 10, 82)
+(51, 258, 50, 10, 51)
+(51, 258, 50, 10, 51)
+(52, 262, 50, 10, 52)
+(52, 261, 50, 10, 52)
+(53, 424, 50, 10, 84)
+(53, 424, 50, 10, 84)
+(54, 272, 50, 10, 54)
+(54, 272, 50, 10, 54)
+(55, 212, 50, 10, 42)
+(55, 277, 50, 10, 55)
+(56, 265, 50, 10, 53)
+(56, 280, 50, 10, 56)
+(57, 288, 50, 10, 57)
+(57, 289, 50, 10, 57)
+(58, 37, 50, 10, 7)
+(58, 457, 50, 10, 91)
+(59, 376, 50, 10, 75)
+(59, 458, 50, 10, 91)
+(60, 302, 50, 10, 60)
+(60, 461, 50, 10, 92)
+(61, 306, 50, 10, 61)
+(61, 305, 50, 10, 61)
+(62, 313, 50, 10, 62)
+(62, 310, 50, 10, 62)
+(63, 317, 50, 10, 63)
+(63, 316, 50, 10, 63)
+(64, 321, 50, 10, 64)
+(64, 107, 50, 10, 21)
+(65, 326, 50, 10, 65)
+(65, 328, 50, 10, 65)
+(66, 332, 50, 10, 66)
+(66, 332, 50, 10, 66)
+(67, 335, 50, 10, 67)
+(67, 335, 50, 10, 67)
+(68, 344, 50, 10, 68)
+(68, 341, 50, 10, 68)
+(69, 347, 50, 10, 69)
+(69, 345, 50, 10, 69)
+(70, 351, 50, 10, 70)
+(70, 352, 50, 10, 70)
+(71, 325, 50, 10, 65)
+(71, 355, 50, 10, 71)
+(72, 362, 50, 10, 72)
+(72, 364, 50, 10, 72)
+(73, 42, 50, 10, 8)
+(73, 369, 50, 10, 73)
+(74, 373, 50, 10, 74)
+(74, 373, 50, 10, 74)
+(75, 204, 50, 10, 40)
+(75, 296, 50, 10, 59)
+(76, 384, 50, 10, 76)
+(76, 403, 50, 10, 80)
+(77, 397, 50, 10, 79)
+(77, 386, 50, 10, 77)
+(78, 230, 50, 10, 46)
+(78, 76, 50, 10, 15)
+(79, 397, 50, 10, 79)
+(79, 395, 50, 10, 79)
+(80, 400, 50, 10, 80)
+(80, 402, 50, 10, 80)
+(81, 418, 50, 10, 83)
+(81, 444, 50, 10, 88)
+(82, 102, 50, 10, 20)
+(82, 413, 50, 10, 82)
+(83, 0, 50, 10, 0)
+(83, 0, 50, 10, 0)
+(84, 389, 50, 10, 77)
+(84, 422, 50, 10, 84)
+(85, 423, 50, 10, 84)
+(85, 434, 50, 10, 86)
+(86, 272, 50, 10, 54)
+(86, 444, 50, 10, 88)
+(87, 276, 50, 10, 55)
+(87, 435, 50, 10, 87)
+(88, 440, 50, 10, 88)
+(88, 443, 50, 10, 88)
+(89, 449, 50, 10, 89)
+(89, 446, 50, 10, 89)
+(90, 291, 50, 10, 58)
+(90, 134, 50, 10, 26)
+(91, 377, 50, 10, 75)
+(91, 203, 50, 10, 40)
+(92, 461, 50, 10, 92)
+(92, 461, 50, 10, 92)
+(93, 465, 50, 10, 93)
+(93, 466, 50, 10, 93)
+Testing use 1098.4781642 s
+13:32:37
+Total test accuracy = 0.63829787234
+(venv) bogon:science_rcn sloanyi$ 

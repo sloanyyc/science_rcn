@@ -237,6 +237,7 @@ def get_mnist_data_iters(data_dir, train_size, test_size,
 
     def _load_data(image_dir, num_per_class, get_filenames=False):
         loaded_data = []
+        os.remove(os.path.join(image_dir, '.DS_Store'))
         for category in sorted(os.listdir(image_dir)):
             cat_path = os.path.join(image_dir, category)
             if not os.path.isdir(cat_path) or category.startswith('.'):

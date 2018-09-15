@@ -58,6 +58,7 @@ def test_image(dat, model_factors,
         Score of the winning feature.
     """
     global test_count
+    start_num = 33
     img = dat[0]
     tgt = dat[1]
     # Get bottom-up messages from the pre-processing layer
@@ -93,7 +94,8 @@ def test_image(dat, model_factors,
         score = rcn_inf.bwd_pass()
         if score >= winner_score:
             winner_idx, winner_score = (idx, score)
-            print('try {}{} char: {} win: {} score: {}'.format(str(chr(int(ch)+48)), str(chr(int(tgt)+48)), ch, idx, winner_score))
+            # print('try {}{} char: {} win: {} score: {}'.format(str(chr(int(ch)+start_num)), str(chr(int(tgt)+start_num)), ch, idx, winner_score))
+            print('try {}{} char: {} win: {} score: {}'.format(str(ch), str(tgt), ch, idx, winner_score))
 
     cur_time = time.time()
     print('bwd_pass use %0.3f'%(cur_time-start_time))

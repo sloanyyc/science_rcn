@@ -41,13 +41,14 @@ def train_image(dat, perturb_factor=2.):
         the pool centers.
         The tightness of the constraint is in the 'perturb_radius' edge attribute.
     """
+    start_num = 33
     img = dat[0]
     ch = dat[1]
     # if (int(ch) < 60):
-    #     print str(chr(int(ch)+48)),
+    #     print str(chr(int(ch)+start_num)),
     #     sys.stdout.flush()
     #     return 
-    # print str(chr(int(ch)+48)),
+    # print str(chr(int(ch)+start_num)),
     # sys.stdout.flush()
     # return 
     # Pre-processing layer (cf. Sec 4.2.1)
@@ -68,7 +69,8 @@ def train_image(dat, perturb_factor=2.):
         return None
     # nx.draw(graph,pos = nx.random_layout(graph),node_color = 'b',edge_color = 'r',with_labels = True, font_size =18,node_size=20)
     # plt.show()
-    print str(chr(int(ch)+48)),
+    # print str(chr(int(ch)+start_num)),
+    print str(ch), 
     sys.stdout.flush()
 
     return ModelFactors(frcs, edge_factors, graph, ch)

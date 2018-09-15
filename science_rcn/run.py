@@ -33,6 +33,50 @@ from science_rcn.learning import train_image
 
 LOG = logging.getLogger(__name__)
 
+def run_test_image(data_dir='tmp',
+                   model_file='default_model.pkl',
+                   train_size=20,
+                   test_size=20,
+                   fit_level=1,
+                   full_test_set=False,
+                   pool_shape=(25, 25),
+                   perturb_factor=2.,
+                   parallel=True,
+                   verbose=False,
+                   seed=5,
+                   class_count=10):
+    logging.getLogger().setLevel(logging.DEBUG if verbose else logging.INFO)
+
+    test_data = load_data(data_dir, None)
+    if len(test_data) <= 0:
+        print('No Image file in path %s'%data_dir)
+        return 
+    # Multiprocessing set up
+    num_workers = None if parallel else 1
+    pool = Pool(num_workers)
+    all_model_factors = pickle.load(open(model_file, 'rb'))
+    all_model_factors = zip(*all_model_factors)
+    # train_results = pickle.load(open('train_results.pkl', 'rb'))
+
+    LOG.info("Testing on {} images...".format(len(test_data)))
+    print(time.strftime('%H:%M:%S', time.localtime(time.time())))
+    start_time = time.time()
+    test_partial = partial(test_image, model_factors=all_model_factors,
+                           pool_shape=pool_shape,
+                           num_candidates=5,
+                           n_iters=20,
+                           test_size=test_size)
+    test_results = pool.map_async(test_partial, [d for d in test_data]).get(9999999)
+
+    # Evaluate result
+    correct = 0
+    for test_idx, (winner_idx, _) in enumerate(test_results):
+        print(int(test_data[test_idx][1]), winner_idx, train_size, class_count, winner_idx // (train_size // class_count))
+        correct += int(test_data[test_idx][1])%10 == winner_idx // (train_size // class_count)
+    print "Testing use {} s".format(time.time()-start_time)
+    print(time.strftime('%H:%M:%S', time.localtime(time.time())))
+    print "Total test accuracy = {}".format(float(correct) / len(test_results))
+
 def run_test_only(data_dir='data/MNIST1',
                    model_file='default_model.pkl',
                    train_size=20,
@@ -90,6 +134,7 @@ def run_test_only(data_dir='data/MNIST1',
     LOG.info("Testing on {} images...".format(len(test_data)))
     print(time.strftime('%H:%M:%S', time.localtime(time.time())))
     start_time = time.time()
+    # print(test_data)
     test_partial = partial(test_image, model_factors=all_model_factors,
                            pool_shape=pool_shape,
                            num_candidates=5,
@@ -165,7 +210,14 @@ def run_experiment(data_dir='data/MNIST1',
     start_time = time.time()
     train_partial = partial(train_image,
                             perturb_factor=perturb_factor)
-    train_results = pool.map_async(train_partial, [d for d in train_data]).get(9999999)
+    split = 100
+    # train_data = train_data[0:34]
+    train_results = []
+    for i in range(0, 1+len(train_data)//split):
+      t_data = train_data[i*split:i*split+split]
+      result = pool.map_async(train_partial, [d for d in t_data]).get(9999999)
+      pickle.dump(result, open('temp_model/model_%d_%d.pkl'%(i*split,i*split+len(t_data)), 'wb'))
+      train_results.extend(result)
     # train_results = []
     # for i in range(len(train_data)):
     #     train_results.append(train_partial(train_data[i], perturb_factor=perturb_factor))
@@ -181,26 +233,59 @@ def run_experiment(data_dir='data/MNIST1',
 
     pickle.dump(all_model_factors, open(model_file, 'wb'))
 
-    LOG.info("Testing on {} images...".format(len(test_data)))
-    start_time = time.time()
-    test_partial = partial(test_image, model_factors=all_model_factors,
-                           pool_shape=pool_shape,
-                           num_candidates=5,
-                           n_iters=20,
-                           test_size=test_size)
-    test_results = pool.map_async(test_partial, [d for d in test_data]).get(9999999)
+    # LOG.info("Testing on {} images...".format(len(test_data)))
+    # start_time = time.time()
+    # test_partial = partial(test_image, model_factors=all_model_factors,
+    #                        pool_shape=pool_shape,
+    #                        num_candidates=5,
+    #                        n_iters=20,
+    #                        test_size=test_size)
+    # test_results = pool.map_async(test_partial, [d for d in test_data]).get(9999999)
 
-    # Evaluate result
-    correct = 0
-    for test_idx, (winner_idx, _) in enumerate(test_results):
-        print(int(test_data[test_idx][1]), winner_idx, train_size, class_count, winner_idx // (train_size // class_count))
-        correct += int(test_data[test_idx][1]) == winner_idx // (train_size // class_count)
-    print "Testing use {} s".format(time.time()-start_time)
-    print(time.strftime('%H:%M:%S', time.localtime(time.time())))
-    print "Total test accuracy = {}".format(float(correct) / len(test_results))
+    # # Evaluate result
+    # correct = 0
+    # for test_idx, (winner_idx, _) in enumerate(test_results):
+    #     print(int(test_data[test_idx][1]), winner_idx, train_size, class_count, winner_idx // (train_size // class_count))
+    #     correct += int(test_data[test_idx][1]) == winner_idx // (train_size // class_count)
+    # print "Testing use {} s".format(time.time()-start_time)
+    # print(time.strftime('%H:%M:%S', time.localtime(time.time())))
+    # print "Total test accuracy = {}".format(float(correct) / len(test_results))
 
-    return all_model_factors, test_results
+    # return all_model_factors, test_results
 
+
+def load_data(image_dir, num_per_class, get_filenames=False):
+    loaded_data = []
+    try:
+        os.remove(os.path.join(image_dir, '.DS_Store'))
+    except:
+        pass
+    for category in sorted(os.listdir(image_dir)):
+        cat_path = os.path.join(image_dir, category)
+        if not os.path.isdir(cat_path) or category.startswith('.'):
+            continue
+        try:
+            os.remove(os.path.join(cat_path, '.DS_Store'))
+        except:
+            pass
+        # print('cat_path %s'%cat_path)
+        if num_per_class is None:
+            samples = sorted(os.listdir(cat_path))
+        else:
+            samples = np.random.choice(sorted(os.listdir(cat_path)), num_per_class)
+
+
+        for fname in samples:
+            filepath = os.path.join(cat_path, fname)
+
+            # Resize and pad the images to (200, 200)
+            image_arr = imresize(imread(filepath), (112, 112))
+            img = np.pad(image_arr,
+                         pad_width=tuple([(p, p) for p in (44, 44)]),
+                         mode='constant', constant_values=0)
+            loaded_data.append((img, category))
+
+    return loaded_data
 
 def get_mnist_data_iters(data_dir, train_size, test_size,
                          full_test_set=False, seed=5, class_count=10):
@@ -235,34 +320,10 @@ def get_mnist_data_iters(data_dir, train_size, test_size,
     if not os.path.isdir(data_dir):
         raise IOError("Can't find your data dir '{}'".format(data_dir))
 
-    def _load_data(image_dir, num_per_class, get_filenames=False):
-        loaded_data = []
-        os.remove(os.path.join(image_dir, '.DS_Store'))
-        for category in sorted(os.listdir(image_dir)):
-            cat_path = os.path.join(image_dir, category)
-            if not os.path.isdir(cat_path) or category.startswith('.'):
-                continue
-            if num_per_class is None:
-                samples = sorted(os.listdir(cat_path))
-            else:
-                samples = np.random.choice(sorted(os.listdir(cat_path)), num_per_class)
-
-            for fname in samples:
-                filepath = os.path.join(cat_path, fname)
-                # print(num_per_class, category, filepath)
-                # Resize and pad the images to (200, 200)
-                image_arr = imresize(imread(filepath), (112, 112))
-                img = np.pad(image_arr,
-                             pad_width=tuple([(p, p) for p in (44, 44)]),
-                             mode='constant', constant_values=0)
-                loaded_data.append((img, category))
-        # print(loaded_data)
-        return loaded_data
-
     np.random.seed(seed)
-    train_set = _load_data(os.path.join(data_dir, 'training'),
+    train_set = load_data(os.path.join(data_dir, 'training'),
                            num_per_class=train_size // class_count)
-    test_set = _load_data(os.path.join(data_dir, 'testing'),
+    test_set = load_data(os.path.join(data_dir, 'testing'),
                           num_per_class=None if full_test_set else test_size // class_count)
     return train_set, test_set
 
@@ -336,7 +397,7 @@ if __name__ == '__main__':
         '--seed',
         dest='seed',
         type=int,
-        default=np.random.randint(1,30),
+        default=5, #np.random.randint(1,30),
         help="Seed for numpy.random to sample training and testing dataset split.",
     )
     parser.add_argument(
@@ -360,9 +421,28 @@ if __name__ == '__main__':
         default=False,
         help="use saved model test only.",
     )
+    parser.add_argument(
+        '--test_image',
+        dest='test_image',
+        action='store_true',
+        default=False,
+        help="test images.",
+    )
     options = parser.parse_args()
 
-    if options.test_only:
+    if options.test_image:
+        run_test_image(model_file=options.model_file,
+                       train_size=options.train_size,
+                       data_dir=options.data_dir,
+                       test_size=options.test_size,
+                       full_test_set=options.full_test_set,
+                       pool_shape=(options.pool_shape, options.pool_shape),
+                       perturb_factor=options.perturb_factor,
+                       seed=options.seed,
+                       verbose=options.verbose,
+                       parallel=options.parallel,
+                       class_count=options.class_count)
+    elif options.test_only:
         # run_experiment(train_size=options.train_size,
         run_test_only(train_size=options.train_size,
                        model_file=options.model_file,

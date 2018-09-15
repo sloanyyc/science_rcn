@@ -31,6 +31,8 @@ import pdb
 from science_rcn.inference import test_image
 from science_rcn.learning import train_image
 
+form_index = 300
+
 LOG = logging.getLogger(__name__)
 
 def run_test_image(data_dir='tmp',
@@ -213,9 +215,11 @@ def run_experiment(data_dir='data/MNIST1',
     split = 100
     # train_data = train_data[0:34]
     train_results = []
-    for i in range(0, 1+len(train_data)//split):
+    for i in range(form_index, 1+len(train_data)//split):
       t_data = train_data[i*split:i*split+split]
+      # print(t_data)
       result = pool.map_async(train_partial, [d for d in t_data]).get(9999999)
+      print(time.strftime('%H:%M:%S', time.localtime(time.time())))
       pickle.dump(result, open('temp_model/model_%d_%d.pkl'%(i*split,i*split+len(t_data)), 'wb'))
       train_results.extend(result)
     # train_results = []
@@ -276,6 +280,10 @@ def load_data(image_dir, num_per_class, get_filenames=False):
 
 
         for fname in samples:
+            if len(loaded_data) < (form_index*100-1) or len(loaded_data)>(form_index*100+501):
+                loaded_data.append(('a', 'b'))
+                continue
+            # print(fname)
             filepath = os.path.join(cat_path, fname)
 
             # Resize and pad the images to (200, 200)
@@ -323,8 +331,8 @@ def get_mnist_data_iters(data_dir, train_size, test_size,
     np.random.seed(seed)
     train_set = load_data(os.path.join(data_dir, 'training'),
                            num_per_class=train_size // class_count)
-    test_set = load_data(os.path.join(data_dir, 'testing'),
-                          num_per_class=None if full_test_set else test_size // class_count)
+    test_set = []; #load_data(os.path.join(data_dir, 'testing'),
+                   #       num_per_class=None if full_test_set else test_size // class_count)
     return train_set, test_set
 
 
